@@ -1,0 +1,21 @@
+date: 2025-12-27
+entries:
+  - category: TryHackMe
+    sessions: 2
+    extra_minutes: 22
+    duration_minutes: 112
+    duration_hours: "1h 52m"
+
+  - category: CTF
+    extra_minutes: 49
+    duration_minutes: 49
+    duration_hours: "0h 49m"
+
+  - category: HackTheBox
+    extra_minutes: 43
+    duration_minutes: 43
+    duration_hours: "0h 43m"
+
+day_total_minutes: 204
+day_total_hours: "3h 24m"
+created_at: 2025-12-27T23:59:00+03:00

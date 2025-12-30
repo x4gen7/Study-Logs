@@ -1,0 +1,12 @@
+week_start: 2025-12-06
+week_end: 2025-12-11
+
+category_totals:
+  TryHackMe: 469 (7h 49m)
+  HackTheBox: 207 (3h 27m)
+  TCM-Security: 90 (1h 30m)
+
+overall_minutes: 766
+overall_hours: "12h 46m"
+
+created_at: 2025-12-11T23:59:00+03:00

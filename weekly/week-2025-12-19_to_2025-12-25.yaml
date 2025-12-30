@@ -1,0 +1,29 @@
+week_start: 2025-12-20   # Friday
+week_end: 2025-12-24     # Tuesday (partial week)
+
+days_logged: 5
+expected_days: 7
+week_status: partial
+
+category_totals:
+  TryHackMe: 401        # 6h 41m
+  HackTheBox: 229       # 3h 49m
+  Book:
+    Computer Networking - A Top-Down Approach: 67  # 1h 07m
+  TCM-Security: 90      # 1h 30m
+  CTF: 147              # 2h 27m
+
+daily_totals:
+  2025-12-20: 270       # 4h 30m
+  2025-12-21: 285       # 4h 45m
+  2025-12-22: 135       # 2h 15m
+  2025-12-23: 165       # 2h 45m
+  2025-12-24: 79        # 1h 19m
+
+overall_minutes: 934
+overall_hours: "15h 34m"
+
+weekly_goal_hours: 36
+goal_completion_percent: 43.2
+
+created_at: 2025-12-24T23:59:00+03:00

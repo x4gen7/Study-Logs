@@ -1,0 +1,21 @@
+month: 2025-11
+
+weeks:
+  - week-2025-11-07_to_11-13.yaml
+  - week-2025-11-14_to_11-20.yaml
+  - week-2025-11-21_to_11-27.yaml
+  - week-2025-11-28_to_2025-12-04.yaml
+
+category_totals:
+  INE-eJPT: 3011 (50h 11m)
+  TryHackMe: 1934 (32h 14m)
+  HackTheBox: 1390 (23h 10m)
+  CTF: 278 (4h 38m)
+  TCM-Security: 221 (3h 41m)
+  Book (Penetration Testing - A Hands-On Introduction to Hacking): 45 (0h 45m)
+  General CS: 70 (1h 10m)
+
+overall_minutes: 6949
+overall_hours: "115h 49m"
+
+created_at: 2025-12-04T23:59:00+03:00
