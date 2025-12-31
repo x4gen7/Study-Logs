@@ -42,7 +42,7 @@
 **Weekly progress:** 18h 24m / 31h 30m
 **Remaining this week:** 13h 06m
 
-### 2025-12-31 (Wednesday)
+### 2025-12-30 (Tuesday)
 
 - TryHackMe: 2h 15m
 - HackTheBox: 0h 45m
