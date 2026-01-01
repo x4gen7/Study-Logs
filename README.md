@@ -42,7 +42,7 @@
 **Weekly progress:** 18h 24m / 31h 30m
 **Remaining this week:** 13h 06m
 
-### 2025-12-30 (Tuesday)
+### 2025-12-31 (Wednesday)
 
 - TryHackMe: 2h 15m
 - HackTheBox: 0h 45m
@@ -50,6 +50,15 @@
 **Today:** 3h 00m
 **Weekly progress:** 21h 24m / 31h 30m
 **Remaining this week:** 10h 06m
+
+### 2025-12-31 (Wednesday)
+
+- CTF: 2h 15m
+- HackTheBox: 1h 30m
+
+**Today:** 3h 45m
+**Weekly progress:** 25h 09m / 31h 30m
+**Remaining this week:** 6h 21m
 
 
 ## 📅 Daily Progress
@@ -60,6 +69,7 @@
 - **2025-12-28** → 5h 15m
 - **2025-12-29** → 5h 15m
 - **2025-12-31** → 3h 00m
+- **2025-12-31** → 3h 45m
 
 
 ## 📆 Weekly Progress
