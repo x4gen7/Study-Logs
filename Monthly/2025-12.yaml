@@ -1,0 +1,24 @@
+month: 2025-12
+weeks_included: 4
+
+category_totals:
+  TryHackMe: 1999        # 33h 19m
+  HackTheBox: 1357       # 22h 37m
+  CTF: 657               # 10h 57m
+  TCM-Security: 390      # 6h 30m
+  INE-eJPT: 118          # 1h 58m
+  Book: 144              # 2h 24m
+
+overall_minutes: 4641
+overall_hours: "77h 21m"
+
+monthly_goal_hours: 144
+goal_completion_percent: 53.7
+
+notes:
+  - Week 1 (2025-12-06 → 2025-12-11): below target
+  - Week 2 (2025-12-12 → 2025-12-18): moderate performance
+  - Week 3 (2025-12-20 → 2025-12-24): partial week
+  - Week 4 (2025-12-26 → 2026-01-01): strong performance, near weekly target
+
+created_at: 2026-01-02T04:00:00+03:00
