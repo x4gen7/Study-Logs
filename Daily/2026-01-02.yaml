@@ -1,0 +1,11 @@
+date: 2026-01-02
+entries:
+  - category: TryHackMe
+    sessions: 2
+    extra_minutes: 0
+    duration_minutes: 90
+    duration_hours: "1h 30m"
+
+day_total_minutes: 90
+day_total_hours: "1h 30m"
+created_at: 2026-01-02T23:59:00+03:00
