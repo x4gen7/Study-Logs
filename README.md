@@ -3,10 +3,19 @@
 
 **Weekly target:** 31h 30m
 
+### 2026-01-02 (Friday)
+
+- TryHackMe: 1h 30m
+
+**Today:** 1h 30m
+**Weekly progress:** 1h 30m / 31h 30m
+**Remaining this week:** 30h 00m
+
 
 ## 📅 Daily Progress
 --------------
 
+- **2026-01-02** → 1h 30m
 
 
 ## 📆 Weekly Progress
