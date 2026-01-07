@@ -39,6 +39,15 @@
 **Weekly progress:** 12h 07m / 31h 30m
 **Remaining this week:** 19h 23m
 
+### 2026-01-06 (Tuesday)
+
+- CTF: 2h 00m
+- HackTheBox: 2h 12m
+
+**Today:** 4h 12m
+**Weekly progress:** 16h 19m / 31h 30m
+**Remaining this week:** 15h 11m
+
 
 ## 📅 Daily Progress
 --------------
@@ -47,6 +56,7 @@
 - **2026-01-03** → 3h 45m
 - **2026-01-04** → 5h 10m
 - **2026-01-05** → 1h 42m
+- **2026-01-06** → 4h 12m
 
 
 ## 📆 Weekly Progress

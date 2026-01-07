@@ -1,0 +1,17 @@
+date: 2026-01-06
+entries:
+  - category: CTF
+    sessions: 2
+    extra_minutes: 30
+    duration_minutes: 120
+    duration_hours: "2h 00m"
+
+  - category: HackTheBox
+    sessions: 2
+    extra_minutes: 42
+    duration_minutes: 132
+    duration_hours: "2h 12m"
+
+day_total_minutes: 252
+day_total_hours: "4h 12m"
+created_at: 2026-01-06T23:59:00+03:00
