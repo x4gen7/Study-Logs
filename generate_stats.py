@@ -148,6 +148,35 @@ OUTPUT.write_text("\n".join(lines))
 print("[+] README.md generated (daily timeline + summaries)")
 with open("README.md", "a", encoding="utf-8") as f:
     f.write("""
+            
+
+
+
+
+            
+----------------- NEW STATS SECTION ----------------
+## 📅 Weekly Study Summary  
+**Week:** 2026-01-02 → 2026-01-08 (Friday → Thursday)
+
+### ⏱ Total Study Time
+- **This week:** **21h 34m** (1,294 minutes)
+
+---
+
+### 🧠 Category Breakdown
+- **TryHackMe:** 8h 45m  
+- **HackTheBox:** 8h 57m  
+- **CTF:** 3h 52m  
+
+---
+
+### 🎯 4-Week Target Progress
+- **4-week target:** 126h  
+- **Studied this week:** 21h 34m  
+- **Remaining to hit 4-week target:** **104h 26m**
+
+
+
 ## 📈 3-Month Study Summary (Oct–Dec 2025)
 
 ### 📊 Monthly Breakdown

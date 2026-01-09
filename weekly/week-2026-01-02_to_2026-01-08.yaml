@@ -1,0 +1,12 @@
+week_start: 2026-01-02
+week_end: 2026-01-08
+
+category_totals:
+  TryHackMe: 525        # 8h 45m
+  HackTheBox: 537       # 8h 57m
+  CTF: 232              # 3h 52m
+
+overall_minutes: 1294
+overall_hours: "21h 34m"
+
+created_at: 2026-01-08T23:59:00+03:00

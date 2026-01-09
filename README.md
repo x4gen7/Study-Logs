@@ -3,75 +3,16 @@
 
 **Weekly target:** 31h 30m
 
-### 2026-01-02 (Friday)
-
-- TryHackMe: 1h 30m
-
-**Today:** 1h 30m
-**Weekly progress:** 1h 30m / 31h 30m
-**Remaining this week:** 30h 00m
-
-### 2026-01-03 (Saturday)
-
-- TryHackMe: 2h 15m
-- HackTheBox: 1h 30m
-
-**Today:** 3h 45m
-**Weekly progress:** 5h 15m / 31h 30m
-**Remaining this week:** 26h 15m
-
-### 2026-01-04 (Sunday)
-
-- TryHackMe: 2h 15m
-- HackTheBox: 2h 15m
-- CTF: 0h 40m
-
-**Today:** 5h 10m
-**Weekly progress:** 10h 25m / 31h 30m
-**Remaining this week:** 21h 05m
-
-### 2026-01-05 (Monday)
-
-- TryHackMe: 0h 30m
-- CTF: 1h 12m
-
-**Today:** 1h 42m
-**Weekly progress:** 12h 07m / 31h 30m
-**Remaining this week:** 19h 23m
-
-### 2026-01-06 (Tuesday)
-
-- CTF: 2h 00m
-- HackTheBox: 2h 12m
-
-**Today:** 4h 12m
-**Weekly progress:** 16h 19m / 31h 30m
-**Remaining this week:** 15h 11m
-
-### 2026-01-07 (Wednesday)
-
-- HackTheBox: 2h 15m
-- TryHackMe: 2h 15m
-
-**Today:** 4h 30m
-**Weekly progress:** 20h 49m / 31h 30m
-**Remaining this week:** 10h 41m
-
 
 ## 📅 Daily Progress
 --------------
 
-- **2026-01-02** → 1h 30m
-- **2026-01-03** → 3h 45m
-- **2026-01-04** → 5h 10m
-- **2026-01-05** → 1h 42m
-- **2026-01-06** → 4h 12m
-- **2026-01-07** → 4h 30m
 
 
 ## 📆 Weekly Progress
 ---------------
 
+- **2026-01-02 → 2026-01-08** → 21h 34m
 
 
 ## 🗓 Monthly Progress
@@ -80,6 +21,35 @@
 - **2025-10_to_2025-11** → 75h 22m
 - **2025-11** → 115h 49m
 - **2025-12** → 77h 21m
+            
+
+
+
+
+            
+----------------- NEW STATS SECTION ----------------
+## 📅 Weekly Study Summary  
+**Week:** 2026-01-02 → 2026-01-08 (Friday → Thursday)
+
+### ⏱ Total Study Time
+- **This week:** **21h 34m** (1,294 minutes)
+
+---
+
+### 🧠 Category Breakdown
+- **TryHackMe:** 8h 45m  
+- **HackTheBox:** 8h 57m  
+- **CTF:** 3h 52m  
+
+---
+
+### 🎯 4-Week Target Progress
+- **4-week target:** 126h  
+- **Studied this week:** 21h 34m  
+- **Remaining to hit 4-week target:** **104h 26m**
+
+
+
 ## 📈 3-Month Study Summary (Oct–Dec 2025)
 
 ### 📊 Monthly Breakdown
