@@ -3,74 +3,27 @@
 
 **Weekly target:** 31h 30m
 
-### 2026-01-09 (Friday)
-
-- TCM-Security: 0h 45m
-
-**Today:** 0h 45m
-**Weekly progress:** 0h 45m / 31h 30m
-**Remaining this week:** 30h 45m
-
-### 2026-01-10 (Saturday)
-
-- TryHackMe: 0h 40m
-
-**Today:** 0h 40m
-**Weekly progress:** 1h 25m / 31h 30m
-**Remaining this week:** 30h 05m
-
-### 2026-01-11 (Sunday)
-
-- TryHackMe: 1h 30m
-- HackTheBox: 1h 17m
-- CTF: 0h 40m
-
-**Today:** 3h 27m
-**Weekly progress:** 4h 52m / 31h 30m
-**Remaining this week:** 26h 38m
-
-### 2026-01-12 (Monday)
-
-- TryHackMe: 1h 20m
-- CTF: 3h 05m
-
-**Today:** 4h 25m
-**Weekly progress:** 9h 17m / 31h 30m
-**Remaining this week:** 22h 13m
-
-### 2026-01-13 (Tuesday)
+### 2026-01-16 (Friday)
 
 - TryHackMe: 2h 15m
 - HackTheBox: 2h 15m
 
 **Today:** 4h 30m
-**Weekly progress:** 13h 47m / 31h 30m
-**Remaining this week:** 17h 43m
-
-### 2026-01-15 (Thursday)
-
-- TryHackMe: 2h 15m
-
-**Today:** 2h 15m
-**Weekly progress:** 16h 02m / 31h 30m
-**Remaining this week:** 15h 28m
+**Weekly progress:** 4h 30m / 31h 30m
+**Remaining this week:** 27h 00m
 
 
 ## 📅 Daily Progress
 --------------
 
-- **2026-01-09** → 0h 45m
-- **2026-01-10** → 0h 40m
-- **2026-01-11** → 3h 27m
-- **2026-01-12** → 4h 25m
-- **2026-01-13** → 4h 30m
-- **2026-01-15** → 2h 15m
+- **2026-01-16** → 4h 30m
 
 
 ## 📆 Weekly Progress
 ---------------
 
 - **2026-01-02 → 2026-01-08** → 21h 34m
+- **2026-01-09 → 2026-01-15** → 16h 02m
 
 
 ## 🗓 Monthly Progress
@@ -86,25 +39,26 @@
 
             
 ----------------- NEW STATS SECTION ----------------
-## 📅 Weekly Study Summary  
-**Week:** 2026-01-02 → 2026-01-08 (Friday → Thursday)
+## 📅 Two-Week Study Summary  
+**Period:** 2026-01-02 → 2026-01-15 (Friday → Thursday)
 
 ### ⏱ Total Study Time
-- **This week:** **21h 34m** (1,294 minutes)
+- **Total (2 weeks):** **37h 36m** (2,256 minutes)
 
 ---
 
 ### 🧠 Category Breakdown
-- **TryHackMe:** 8h 45m  
-- **HackTheBox:** 8h 57m  
-- **CTF:** 3h 52m  
+- **TryHackMe:** 16h 45m  
+- **HackTheBox:** 12h 29m  
+- **CTF:** 7h 37m  
+- **TCM-Security:** 0h 45m  
 
 ---
 
 ### 🎯 4-Week Target Progress
 - **4-week target:** 126h  
-- **Studied this week:** 21h 34m  
-- **Remaining to hit 4-week target:** **104h 26m**
+- **Studied in these 2 weeks:** 37h 36m  
+- **Remaining to hit 4-week target:** **88h 24m**
 
 
 
