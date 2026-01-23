@@ -64,7 +64,7 @@
 
 ### 2026-01-22 (Thursday)
 
-- Book: 1h 30m
+- Programming Language: 1h 30m
 - TryHackMe: 1h 22m
 - HackTheBox: 0h 53m
 
