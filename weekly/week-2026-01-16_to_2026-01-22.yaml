@@ -1,0 +1,14 @@
+week_start: 2026-01-16
+week_end: 2026-01-22
+
+category_totals:
+  TryHackMe: 793                # 13h 13m
+  HackTheBox: 577               # 9h 37m
+  CTF: 220                      # 3h 40m
+  TCM-Security: 120             # 2h 00m
+  Programming Language: 90      # 1h 30m
+
+overall_minutes: 1800
+overall_hours: "30h 00m"
+
+created_at: 2026-01-22T23:59:00+03:00

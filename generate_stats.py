@@ -155,28 +155,29 @@ with open("README.md", "a", encoding="utf-8") as f:
 
             
 ----------------- NEW STATS SECTION ----------------
-## 📅 Two-Week Study Summary  
-**Period:** 2026-01-02 → 2026-01-15 (Friday → Thursday)
+## 📅 Three-Week Study Summary  
+**Period:** 2026-01-02 → 2026-01-22 (Friday → Thursday)
+
+---
 
 ### ⏱ Total Study Time
-- **Total (2 weeks):** **37h 36m** (2,256 minutes)
+- **Total (3 weeks):** **67h 36m** (4,056 minutes)
 
 ---
 
 ### 🧠 Category Breakdown
-- **TryHackMe:** 16h 45m  
-- **HackTheBox:** 12h 29m  
-- **CTF:** 7h 37m  
-- **TCM-Security:** 0h 45m  
+- **TryHackMe:** 29h 58m  
+- **HackTheBox:** 22h 06m  
+- **CTF:** 11h 17m  
+- **TCM-Security:** 2h 45m  
+- **Programming Language:** 1h 30m  
 
 ---
 
 ### 🎯 4-Week Target Progress
 - **4-week target:** 126h  
-- **Studied in these 2 weeks:** 37h 36m  
-- **Remaining to hit 4-week target:** **88h 24m**
-
-
+- **Studied in these 3 weeks:** 67h 36m  
+- **Remaining to hit 4-week target:** **58h 24m**
 
 ## 📈 3-Month Study Summary (Oct–Dec 2025)
 
