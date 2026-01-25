@@ -3,10 +3,21 @@
 
 **Weekly target:** 31h 30m
 
+### 2026-01-24 (Saturday)
+
+- TryHackMe: 1h 10m
+- CTF: 0h 35m
+- General CS: 2h 15m
+
+**Today:** 4h 00m
+**Weekly progress:** 4h 00m / 31h 30m
+**Remaining this week:** 27h 30m
+
 
 ## 📅 Daily Progress
 --------------
 
+- **2026-01-24** → 4h 00m
 
 
 ## 📆 Weekly Progress
