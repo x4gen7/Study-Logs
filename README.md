@@ -13,11 +13,22 @@
 **Weekly progress:** 4h 00m / 31h 30m
 **Remaining this week:** 27h 30m
 
+### 2026-01-25 (Sunday)
+
+- General CS: 0h 15m
+- Programming Language: 0h 40m
+- CTF: 0h 35m
+
+**Today:** 1h 30m
+**Weekly progress:** 5h 30m / 31h 30m
+**Remaining this week:** 26h 00m
+
 
 ## 📅 Daily Progress
 --------------
 
 - **2026-01-24** → 4h 00m
+- **2026-01-25** → 1h 30m
 
 
 ## 📆 Weekly Progress
