@@ -1,0 +1,14 @@
+week_start: 2026-01-23
+week_end: 2026-01-29
+
+category_totals:
+  TryHackMe: 390              # 6h 30m
+  CTF: 240                    # 4h 00m
+  Programming Language: 235   # 3h 55m
+  General CS: 205             # 3h 25m
+  HackTheBox: 55              # 0h 55m
+
+overall_minutes: 1125
+overall_hours: "18h 45m"
+
+created_at: 2026-01-29T23:59:00+03:00
