@@ -3,10 +3,21 @@
 
 **Weekly target:** 31h 30m
 
+### 2026-01-31 (Saturday)
+
+- General InfoSec: 0h 45m
+- TryHackMe: 2h 30m
+- CTF: 1h 30m
+
+**Today:** 4h 45m
+**Weekly progress:** 4h 45m / 31h 30m
+**Remaining this week:** 26h 45m
+
 
 ## 📅 Daily Progress
 --------------
 
+- **2026-01-31** → 4h 45m
 
 
 ## 📆 Weekly Progress
@@ -93,3 +104,4 @@
 - **General CS:** 4h 35m (275 minutes)
 - **Labex:** 1h 31m (91 minutes)
 - **PortSwigger:** 0h 45m (45 minutes)
+
