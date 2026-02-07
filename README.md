@@ -3,61 +3,29 @@
 
 **Weekly target:** 31h 30m
 
-### 2026-01-31 (Saturday)
+### 2026-02-06 (Friday)
 
-- General InfoSec: 0h 45m
-- TryHackMe: 2h 30m
-- CTF: 1h 30m
-
-**Today:** 4h 45m
-**Weekly progress:** 4h 45m / 31h 30m
-**Remaining this week:** 26h 45m
-
-### 2026-02-01 (Sunday)
-
-- Book: 0h 25m
 - TryHackMe: 1h 40m
-- CTF: 0h 45m
-- General CS: 0h 10m
+- HackTheBox: 1h 00m
+- General CS: 1h 03m
+- TCM-Security: 0h 37m
+- CTF: 0h 10m
 
-**Today:** 3h 00m
-**Weekly progress:** 7h 45m / 31h 30m
-**Remaining this week:** 23h 45m
-
-### 2026-02-03 (Tuesday)
-
-- TCM-Security: 0h 45m
-- TryHackMe: 0h 28m
-- CTF: 0h 40m
-- HackTheBox: 0h 37m
-
-**Today:** 2h 30m
-**Weekly progress:** 10h 15m / 31h 30m
-**Remaining this week:** 21h 15m
-
-### 2026-02-05 (Thursday)
-
-- CTF: 2h 05m
-- TryHackMe: 1h 00m
-- General CS: 0h 20m
-
-**Today:** 3h 25m
-**Weekly progress:** 13h 40m / 31h 30m
-**Remaining this week:** 17h 50m
+**Today:** 4h 30m
+**Weekly progress:** 4h 30m / 31h 30m
+**Remaining this week:** 27h 00m
 
 
 ## 📅 Daily Progress
 --------------
 
-- **2026-01-31** → 4h 45m
-- **2026-02-01** → 3h 00m
-- **2026-02-03** → 2h 30m
-- **2026-02-05** → 3h 25m
+- **2026-02-06** → 4h 30m
 
 
 ## 📆 Weekly Progress
 ---------------
 
+- **2026-01-30 → 2026-02-05** → 13h 40m
 
 
 ## 🗓 Monthly Progress
@@ -75,45 +43,30 @@
             
 ##---------------- NEW STATS SECTION ----------------
 ## 📅 Weekly Study Summary  
-**Week:** 2026-01-23 → 2026-01-29 (Friday → Thursday)
+**Week:** 2026-01-30 → 2026-02-05 (Friday → Thursday)
 
 ---
 
 ### ⏱ Total Study Time
-- **This week:** **18h 45m** (1,125 minutes)
+- **This week:** **13h 40m** (820 minutes)
 
 ---
 
 ### 🧠 Category Breakdown
-- **TryHackMe:** 6h 30m  
-- **CTF:** 4h 00m  
-- **Programming Language:** 3h 55m  
-- **General CS:** 3h 25m  
-- **HackTheBox:** 0h 55m  
+- **TryHackMe:** 5h 38m  
+- **CTF:** 5h 00m  
+- **General InfoSec:** 0h 45m  
+- **TCM-Security:** 0h 45m  
+- **General CS:** 0h 30m  
+- **HackTheBox:** 0h 37m  
+- **Book:** 0h 25m  
 
+---
 
-
-## 📊 Weekly Comparison (4 Weeks)
-
-- **Week 1 (2026-01-02 → 2026-01-08):** 21h 34m  
-- **Week 2 (2026-01-09 → 2026-01-15):** 16h 02m  
-- **Week 3 (2026-01-16 → 2026-01-22):** 30h 00m  
-- **Week 4 (2026-01-23 → 2026-01-29):** 18h 45m  
-
-### Trend
-- Peak performance in **Week 3**
-- Noticeable drop in **Week 4**
-- Average per week ≈ **21h 35m**
-
-
-## 🎯 4-Week Target Verdict
-
-- **Target (4 weeks):** 126h  
-- **Actual studied:** **86h 21m**  
-- **Shortfall:** **39h 39m**
-
-### Verdict
-❌ **MISS**
+### 🎯 4-Week Target Progress
+- **4-week target:** 126h  
+- **Studied so far (Week 1/4):** **13h 40m**  
+- **Remaining to hit 4-week target:** **112h 20m**
 
 ##---------------- NEW STATS SECTION ----------------
 ## 📈 4-Month Study Summary (Oct 2025 → Jan 2026)
