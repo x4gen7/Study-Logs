@@ -15,11 +15,24 @@
 **Weekly progress:** 4h 30m / 31h 30m
 **Remaining this week:** 27h 00m
 
+### 2026-02-07 (Saturday)
+
+- TCM-Security: 1h 05m
+- TryHackMe: 0h 25m
+- CTF: 1h 10m
+- HackTheBox: 0h 10m
+- General CS: 0h 10m
+
+**Today:** 3h 00m
+**Weekly progress:** 7h 30m / 31h 30m
+**Remaining this week:** 24h 00m
+
 
 ## 📅 Daily Progress
 --------------
 
 - **2026-02-06** → 4h 30m
+- **2026-02-07** → 3h 00m
 
 
 ## 📆 Weekly Progress
