@@ -3,90 +3,28 @@
 
 **Weekly target:** 31h 30m
 
-### 2026-02-06 (Friday)
+### 2026-02-13 (Friday)
 
-- TryHackMe: 1h 40m
-- HackTheBox: 1h 00m
-- General CS: 1h 03m
-- TCM-Security: 0h 37m
-- CTF: 0h 10m
-
-**Today:** 4h 30m
-**Weekly progress:** 4h 30m / 31h 30m
-**Remaining this week:** 27h 00m
-
-### 2026-02-07 (Saturday)
-
-- TCM-Security: 1h 05m
-- TryHackMe: 0h 25m
-- CTF: 1h 10m
-- HackTheBox: 0h 10m
-- General CS: 0h 10m
+- TryHackMe: 1h 15m
+- TCM-Security: 1h 00m
+- HackTheBox: 0h 45m
 
 **Today:** 3h 00m
-**Weekly progress:** 7h 30m / 31h 30m
-**Remaining this week:** 24h 00m
-
-### 2026-02-08 (Sunday)
-
-- TCM-Security: 1h 45m
-- General CS: 1h 00m
-- TryHackMe: 0h 45m
-- HackTheBox: 0h 45m
-- CTF: 0h 10m
-
-**Today:** 4h 25m
-**Weekly progress:** 11h 55m / 31h 30m
-**Remaining this week:** 19h 35m
-
-### 2026-02-09 (Monday)
-
-- HackTheBox: 0h 25m
-- CTF: 0h 40m
-- TCM-Security: 0h 43m
-- TryHackMe: 1h 57m
-
-**Today:** 3h 45m
-**Weekly progress:** 15h 40m / 31h 30m
-**Remaining this week:** 15h 50m
-
-### 2026-02-11 (Wednesday)
-
-- TryHackMe: 1h 41m
-- TCM-Security: 0h 48m
-- HackTheBox: 1h 15m
-- CTF: 1h 00m
-
-**Today:** 4h 44m
-**Weekly progress:** 20h 24m / 31h 30m
-**Remaining this week:** 11h 06m
-
-### 2026-02-12 (Thursday)
-
-- TryHackMe: 1h 45m
-- HackTheBox: 1h 40m
-- TCM-Security: 0h 20m
-
-**Today:** 3h 45m
-**Weekly progress:** 24h 09m / 31h 30m
-**Remaining this week:** 7h 21m
+**Weekly progress:** 3h 00m / 31h 30m
+**Remaining this week:** 28h 30m
 
 
 ## 📅 Daily Progress
 --------------
 
-- **2026-02-06** → 4h 30m
-- **2026-02-07** → 3h 00m
-- **2026-02-08** → 4h 25m
-- **2026-02-09** → 3h 45m
-- **2026-02-11** → 4h 44m
-- **2026-02-12** → 3h 45m
+- **2026-02-13** → 3h 00m
 
 
 ## 📆 Weekly Progress
 ---------------
 
 - **2026-01-30 → 2026-02-05** → 13h 40m
+- **2026-02-06 → 2026-02-12** → 24h 09m
 
 
 ## 🗓 Monthly Progress
@@ -102,32 +40,31 @@
 
 
             
-##---------------- NEW STATS SECTION ----------------
-## 📅 Weekly Study Summary  
-**Week:** 2026-01-30 → 2026-02-05 (Friday → Thursday)
+## 📅 Two-Week Study Summary  
+**Period:** 2026-01-30 → 2026-02-12 (Friday → Thursday)
 
 ---
 
 ### ⏱ Total Study Time
-- **This week:** **13h 40m** (820 minutes)
+- **Total (2 weeks):** **37h 49m** (2,269 minutes)
 
 ---
 
 ### 🧠 Category Breakdown
-- **TryHackMe:** 5h 38m  
-- **CTF:** 5h 00m  
+- **TryHackMe:** 13h 51m  
+- **CTF:** 8h 10m  
+- **TCM-Security:** 6h 03m  
+- **HackTheBox:** 4h 52m  
+- **General CS:** 2h 43m  
 - **General InfoSec:** 0h 45m  
-- **TCM-Security:** 0h 45m  
-- **General CS:** 0h 30m  
-- **HackTheBox:** 0h 37m  
 - **Book:** 0h 25m  
 
 ---
 
 ### 🎯 4-Week Target Progress
 - **4-week target:** 126h  
-- **Studied so far (Week 1/4):** **13h 40m**  
-- **Remaining to hit 4-week target:** **112h 20m**
+- **Studied in these 2 weeks:** **37h 49m**  
+- **Remaining to hit 4-week target:** **88h 11m**
 
 ##---------------- NEW STATS SECTION ----------------
 ## 📈 4-Month Study Summary (Oct 2025 → Jan 2026)
