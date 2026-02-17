@@ -1,0 +1,17 @@
+date: 2026-02-16
+entries:
+  - category: TryHackMe
+    sessions: 3
+    extra_minutes: 95
+    duration_minutes: 95
+    duration_hours: "1h 35m"
+
+  - category: CTF
+    sessions: 3
+    extra_minutes: 85
+    duration_minutes: 85
+    duration_hours: "1h 25m"
+
+day_total_minutes: 180
+day_total_hours: "3h 00m"
+created_at: 2026-02-16T23:59:00+03:00
