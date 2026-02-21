@@ -1,0 +1,15 @@
+week_start: 2026-02-13
+week_end: 2026-02-19
+
+category_totals:
+  TryHackMe: 232                   # 3h 52m
+  CTF: 264                         # 4h 24m
+  TCM-Security: 100                # 1h 40m
+  HackTheBox: 90                   # 1h 30m
+  General CS: 53                   # 0h 53m
+  Reading General InfoSec: 26      # 0h 26m
+
+overall_minutes: 765
+overall_hours: "12h 45m"
+
+created_at: 2026-02-19T23:59:00+03:00
