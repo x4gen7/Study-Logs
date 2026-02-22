@@ -3,56 +3,23 @@
 
 **Weekly target:** 31h 30m
 
-### 2026-02-13 (Friday)
+### 2026-02-22 (Sunday)
 
-- TryHackMe: 1h 15m
-- TCM-Security: 1h 00m
-- HackTheBox: 0h 45m
-
-**Today:** 3h 00m
-**Weekly progress:** 3h 00m / 31h 30m
-**Remaining this week:** 28h 30m
-
-### 2026-02-14 (Saturday)
-
-- TryHackMe: 0h 42m
-- TCM-Security: 0h 15m
-- General CS: 0h 53m
-- HackTheBox: 0h 25m
-
-**Today:** 2h 15m
-**Weekly progress:** 5h 15m / 31h 30m
-**Remaining this week:** 26h 15m
-
-### 2026-02-16 (Monday)
-
-- TryHackMe: 1h 35m
-- CTF: 1h 25m
-
-**Today:** 3h 00m
-**Weekly progress:** 8h 15m / 31h 30m
-**Remaining this week:** 23h 15m
-
-### 2026-02-19 (Thursday)
-
-- CTF: 2h 59m
-- TryHackMe: 0h 20m
-- HackTheBox: 0h 20m
-- TCM-Security: 0h 25m
-- Reading General InfoSec: 0h 26m
+- TryHackMe: 0h 59m
+- TCM-Security: 0h 05m
+- General CS: 1h 07m
+- CTF: 1h 53m
+- HackTheBox: 0h 26m
 
 **Today:** 4h 30m
-**Weekly progress:** 12h 45m / 31h 30m
-**Remaining this week:** 18h 45m
+**Weekly progress:** 4h 30m / 31h 30m
+**Remaining this week:** 27h 00m
 
 
 ## 📅 Daily Progress
 --------------
 
-- **2026-02-13** → 3h 00m
-- **2026-02-14** → 2h 15m
-- **2026-02-16** → 3h 00m
-- **2026-02-19** → 4h 30m
+- **2026-02-22** → 4h 30m
 
 
 ## 📆 Weekly Progress
