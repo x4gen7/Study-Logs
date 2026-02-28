@@ -1,0 +1,28 @@
+period_start: 2026-01-30
+period_end: 2026-02-26
+weeks_count: 4
+
+category_totals:
+  TryHackMe: 1375        # 22h 55m
+  HackTheBox: 453        # 7h 33m
+  CTF: 1050              # 17h 30m
+  TCM-Security: 513      # 8h 33m
+  General CS: 297        # 4h 57m
+  General InfoSec: 71    # 1h 11m
+  
+  Book: 25               # 0h 25m
+
+overall_minutes: 3844
+overall_hours: "64h 04m"
+
+weekly_goal_hours: 36
+four_week_goal_hours: 144
+goal_completion_percent: 44.4
+
+notes:
+  - Week 1: light start
+  - Week 2: strongest week
+  - Week 3: dip
+  - Week 4: moderate recovery
+
+created_at: 2026-02-27T00:05:00+03:00
