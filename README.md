@@ -14,11 +14,24 @@
 **Weekly progress:** 3h 45m / 31h 30m
 **Remaining this week:** 27h 45m
 
+### 2026-03-03 (Tuesday)
+
+- HackTheBox: 0h 22m
+- TryHackMe: 2h 05m
+- TCM-Security: 0h 20m
+- CTF: 1h 35m
+- General CS: 0h 08m
+
+**Today:** 4h 30m
+**Weekly progress:** 8h 15m / 31h 30m
+**Remaining this week:** 23h 15m
+
 
 ## 📅 Daily Progress
 --------------
 
 - **2026-02-28** → 3h 45m
+- **2026-03-03** → 4h 30m
 
 
 ## 📆 Weekly Progress
@@ -29,7 +42,7 @@
 ## 🗓 Monthly Progress
 ----------------
 
-- **2025-10**→ 75h 22m
+- **2025-10_to_2025-11** → 75h 22m
 - **2025-11** → 115h 49m
 - **2025-12** → 77h 21m
 - **2026-01** → 86h 21m
@@ -41,8 +54,8 @@
 - **2025-10 → 2025-11:** 75h 22m  
 - **2025-11:** 115h 49m  
 - **2025-12:** 77h 21m  
-- **2026-01:** 86h 21m  
-- **2026-02:** 64h 04m  
+- **2026-01 (4-week period 2026-01-02 → 2026-01-29):** 86h 21m  
+- **2026-01-30 → 2026-02-26:** 64h 04m  
 
 ### ⏱ Overall Total
 - **Total study time:** **418h 57m**  

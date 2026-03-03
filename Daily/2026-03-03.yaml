@@ -1,0 +1,35 @@
+date: 2026-03-03
+entries:
+  - category: HackTheBox
+    sessions: 1
+    extra_minutes: 22
+    duration_minutes: 22
+    duration_hours: "0h 22m"
+
+  - category: TryHackMe
+    sessions: 3
+    extra_minutes: 35
+    duration_minutes: 125
+    duration_hours: "2h 05m"
+
+  - category: TCM-Security
+    sessions: 1
+    extra_minutes: 20
+    duration_minutes: 20
+    duration_hours: "0h 20m"
+
+  - category: CTF
+    sessions: 3
+    extra_minutes: 5
+    duration_minutes: 95
+    duration_hours: "1h 35m"
+
+  - category: General CS
+    extra_minutes: 8
+    duration_minutes: 8
+    duration_hours: "0h 08m"
+
+day_total_minutes: 270
+day_total_hours: "4h 30m"
+
+created_at: 2026-03-03T23:59:00+03:00
