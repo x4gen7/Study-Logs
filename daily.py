@@ -215,40 +215,18 @@ def prompt_minutes(stdscr: curses.window, category: str) -> int | None:
         return minutes
 
 
-def choose_category(
-    stdscr: curses.window,
-    categories: list[str],
-) -> str | None:
-    while True:
-        options = [*categories, "Custom category", "Back"]
-        idx = menu(stdscr, "Choose Category", options, "Select category or create your own")
-        if idx == -1 or idx == len(options) - 1:
-            return None
+def build_review_lines(entries: list[dict[str, object]], activity: list[str] | None = None) -> list[str]:
+    lines = []
+    if entries:
+        lines.extend(
+            [
+                f"{i + 1}. {entry['category']} - {entry['duration_minutes']}m ({entry['duration_hours']})"
+                for i, entry in enumerate(entries)
+            ]
+        )
+    else:
+        lines.append("No entries yet.")
 
-        selected = options[idx]
-        if idx < len(categories):
-            return selected
-
-        if selected == "Custom category":
-            raw = prompt_text(stdscr, "Custom Category", "Category name:")
-            if raw is None:
-                continue
-            category = raw.strip()
-            if not category:
-                show_message(stdscr, "Invalid Category", ["Category cannot be empty."])
-                continue
-            return category
-
-
-def review_entries(stdscr: curses.window, entries: list[dict[str, object]]) -> None:
-    if not entries:
-        show_message(stdscr, "Entries", ["No entries yet."])
-        return
-
-    lines = [
-        f"{i + 1}. {entry['category']} - {entry['duration_minutes']}m ({entry['duration_hours']})"
-        for i, entry in enumerate(entries)
-    ]
     total = sum(int(item["duration_minutes"]) for item in entries)
     sessions = total // 45
     remaining = 45 - (total % 45) if total % 45 != 0 else 0
@@ -259,7 +237,205 @@ def review_entries(stdscr: curses.window, entries: list[dict[str, object]]) -> N
         lines.append("Next 45m session: reached")
     else:
         lines.append(f"Minutes to next 45m session: {remaining}m")
-    show_message(stdscr, "Current Entries", lines)
+    if activity:
+        lines.append("")
+        lines.append("Activity:")
+        lines.extend(activity[-4:])
+    return lines
+
+
+def add_review_entries(
+    stdscr: curses.window,
+    categories: list[str],
+    entries: list[dict[str, object]],
+    sessions_logged: int,
+) -> int:
+    options = [*categories, "Custom category", "Back"]
+    idx = 0
+    mode = "select"
+    input_value = ""
+    selected_category = ""
+    activity: list[str] = []
+
+    while True:
+        stdscr.clear()
+        h, w = stdscr.getmaxyx()
+
+        top_h = max(8, (h - 3) // 2)
+        bottom_top = top_h + 1
+        bottom_h = h - bottom_top - 1
+
+        # Fallback for very short terminals.
+        if bottom_h < 7:
+            pick = menu(stdscr, "Add/Review Entries", options, "Select category or create your own")
+            if pick == -1 or pick == len(options) - 1:
+                return sessions_logged
+            selected = options[pick]
+            if selected == "Custom category":
+                raw = prompt_text(stdscr, "Custom Category", "Category name:")
+                if raw is None:
+                    continue
+                category = raw.strip()
+                if not category:
+                    show_message(stdscr, "Invalid Category", ["Category cannot be empty."])
+                    continue
+                selected = category
+
+            minutes = prompt_minutes(stdscr, selected)
+            if minutes is None:
+                continue
+            entries.append(
+                {
+                    "category": selected,
+                    "duration_minutes": minutes,
+                    "duration_hours": hm(minutes),
+                }
+            )
+            day_total = sum(int(item["duration_minutes"]) for item in entries)
+            total_sessions = day_total // 45
+            new_sessions = total_sessions - sessions_logged
+            sessions_logged = total_sessions
+            if new_sessions > 0:
+                for i in range(new_sessions):
+                    activity.append(
+                        f"[NOTIFY] Session {sessions_logged - new_sessions + i + 1} logged (45m)."
+                    )
+            continue
+
+        draw_box(stdscr, 1, 2, top_h, max(20, w - 4), "Add Entry", curses.color_pair(1))
+        draw_box(stdscr, bottom_top, 2, bottom_h, max(20, w - 4), "Review Entries", curses.color_pair(1))
+
+        if mode == "select":
+            put(
+                stdscr,
+                3,
+                4,
+                "Select a category. Enter to continue, q to go back.",
+                curses.color_pair(3) | curses.A_BOLD,
+            )
+        elif mode == "custom":
+            put(stdscr, 3, 4, "Enter custom category name:", curses.color_pair(3) | curses.A_BOLD)
+            put(stdscr, 4, 4, f"> {input_value}", curses.A_BOLD)
+            put(stdscr, 5, 4, "Enter: confirm  Backspace: delete  q: cancel", curses.color_pair(3))
+        elif mode == "minutes":
+            put(stdscr, 3, 4, f"Minutes for '{selected_category}':", curses.color_pair(3) | curses.A_BOLD)
+            put(stdscr, 4, 4, f"> {input_value}", curses.A_BOLD)
+            put(stdscr, 5, 4, "Enter: save  Backspace: delete  q: cancel", curses.color_pair(3))
+
+        start_y = 5
+        max_top_rows = top_h - 4
+        for i, opt in enumerate(options):
+            row = start_y + i
+            if i >= max_top_rows or row >= bottom_top - 1:
+                break
+            attr = (curses.color_pair(2) | curses.A_BOLD) if i == idx else curses.A_NORMAL
+            prefix = " > " if i == idx else "   "
+            put(stdscr, row, 4, f"{prefix}{opt}", attr)
+
+        review_lines = build_review_lines(entries, activity)
+        review_start_y = bottom_top + 2
+        max_bottom_rows = bottom_h - 3
+        for i, line in enumerate(review_lines):
+            if i >= max_bottom_rows:
+                break
+            put(stdscr, review_start_y + i, 4, line)
+
+        put(
+            stdscr,
+            h - 1,
+            3,
+            "Up/Down (or j/k): move  Enter: select  q: back",
+            curses.color_pair(3) | curses.A_BOLD,
+        )
+
+        stdscr.refresh()
+
+        key = stdscr.getch()
+        if mode == "select":
+            if key in (curses.KEY_UP, ord("k")):
+                idx = (idx - 1) % len(options)
+            elif key in (curses.KEY_DOWN, ord("j")):
+                idx = (idx + 1) % len(options)
+            elif key in (10, 13, curses.KEY_ENTER):
+                selected = options[idx]
+                if selected == "Back":
+                    return sessions_logged
+                if selected == "Custom category":
+                    mode = "custom"
+                    input_value = ""
+                    continue
+                selected_category = selected
+                mode = "minutes"
+                input_value = "45"
+            elif key in (ord("q"), 27):
+                return sessions_logged
+            continue
+
+        if key in (ord("q"), 27):
+            mode = "select"
+            input_value = ""
+            continue
+
+        if key in (curses.KEY_BACKSPACE, 127, 8):
+            input_value = input_value[:-1]
+            continue
+
+        if key in (10, 13, curses.KEY_ENTER):
+            if mode == "custom":
+                category = input_value.strip()
+                if not category:
+                    activity.append("Custom category cannot be empty.")
+                    mode = "select"
+                    input_value = ""
+                    continue
+                selected_category = category
+                mode = "minutes"
+                input_value = "45"
+                continue
+
+            if mode == "minutes":
+                try:
+                    minutes = int(input_value.strip())
+                    if minutes < 0:
+                        raise ValueError
+                except ValueError:
+                    activity.append("Minutes must be a non-negative whole number.")
+                    mode = "select"
+                    input_value = ""
+                    continue
+
+                entries.append(
+                    {
+                        "category": selected_category,
+                        "duration_minutes": minutes,
+                        "duration_hours": hm(minutes),
+                    }
+                )
+                activity.append(f"Added: {selected_category} - {minutes}m")
+
+                day_total = sum(int(item["duration_minutes"]) for item in entries)
+                total_sessions = day_total // 45
+                new_sessions = total_sessions - sessions_logged
+                sessions_logged = total_sessions
+                if new_sessions > 0:
+                    for i in range(new_sessions):
+                        activity.append(
+                            f"[NOTIFY] Session {sessions_logged - new_sessions + i + 1} logged (45m)."
+                        )
+                else:
+                    activity.append("No new full 45m session reached yet.")
+
+                mode = "select"
+                input_value = ""
+                selected_category = ""
+            continue
+
+        if mode == "minutes":
+            if 48 <= key <= 57:
+                input_value += chr(key)
+        else:
+            if 32 <= key <= 126:
+                input_value += chr(key)
 
 
 def run_tui(
@@ -277,15 +453,14 @@ def run_tui(
         day_total = sum(int(item["duration_minutes"]) for item in entries)
         options = [
             f"Set log date ({log_date.strftime('%Y-%m-%d')})",
-            "Add entry",
-            f"Review entries ({len(entries)})",
+            f"Add/Review entries ({len(entries)})",
             "Save log and exit",
             "Exit without saving",
         ]
         footer = f"Total today: {day_total}m ({hm(day_total)})"
         choice = menu(stdscr, "Daily Log TUI", options, footer)
 
-        if choice in (-1, 4):
+        if choice in (-1, 3):
             return log_date, entries, False
 
         if choice == 0:
@@ -293,42 +468,10 @@ def run_tui(
             continue
 
         if choice == 1:
-            category = choose_category(stdscr, categories)
-            if category is None:
-                continue
-            minutes = prompt_minutes(stdscr, category)
-            if minutes is None:
-                continue
-
-            entries.append(
-                {
-                    "category": category,
-                    "duration_minutes": minutes,
-                    "duration_hours": hm(minutes),
-                }
-            )
-
-            day_total = sum(int(item["duration_minutes"]) for item in entries)
-            total_sessions = day_total // 45
-            new_sessions = total_sessions - sessions_logged
-            sessions_logged = total_sessions
-
-            lines = [f"Added: {category} - {minutes}m"]
-            if new_sessions > 0:
-                for i in range(new_sessions):
-                    lines.append(
-                        f"[NOTIFY] Session {sessions_logged - new_sessions + i + 1} logged (45m)."
-                    )
-            else:
-                lines.append("No new full 45m session reached yet.")
-            show_message(stdscr, "Entry Added", lines)
+            sessions_logged = add_review_entries(stdscr, categories, entries, sessions_logged)
             continue
 
         if choice == 2:
-            review_entries(stdscr, entries)
-            continue
-
-        if choice == 3:
             if not entries:
                 show_message(stdscr, "Nothing to Save", ["Add at least one entry first."])
                 continue
