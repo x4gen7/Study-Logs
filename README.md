@@ -49,7 +49,7 @@
 - **2026-02** -> 64h 04m
 
 
-## Study Summary (2025-10 -> 2026-02)
+## Study Summary
 
 ### Overall Total
 - **Total study time:** **418h 57m**

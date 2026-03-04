@@ -361,13 +361,7 @@ def build_readme(
     lines.append("")
     lines.append("")
 
-    if monthly_logs:
-        start_period = monthly_logs[0]["sort_key"].strftime("%Y-%m")
-        end_period = monthly_logs[-1]["period_end"].strftime("%Y-%m")
-        period_title = f"{start_period} -> {end_period}"
-        lines.append(f"## Study Summary ({period_title})")
-    else:
-        lines.append("## Study Summary")
+    lines.append("## Study Summary")
 
     lines.append("")
     lines.append("### Overall Total")
