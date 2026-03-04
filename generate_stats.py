@@ -265,7 +265,7 @@ def build_readme(
 
     # Daily summary
     lines.append("")
-    lines.append("## Daily Summary")
+    lines.append("## 📅 Daily Summary")
     lines.append("--------------")
     lines.append("")
     for day in daily_logs:
@@ -274,7 +274,7 @@ def build_readme(
     # Weekly summary
     lines.append("")
     lines.append("")
-    lines.append("## Weekly Progress")
+    lines.append("## 📅 Weekly Progress")
     lines.append("---------------")
     lines.append("")
     if weekly_window > 0:
@@ -327,7 +327,7 @@ def build_readme(
     # Monthly summary
     lines.append("")
     lines.append("")
-    lines.append("## Monthly Progress")
+    lines.append("## 📅 Monthly Progress")
     lines.append("----------------")
     lines.append("")
     if monthly_logs:

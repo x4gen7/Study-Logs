@@ -27,19 +27,19 @@
 **Remaining this week:** 23h 15m
 
 
-## Daily Summary
+## 📅 Daily Summary
 --------------
 
 - **2026-02-28** -> 3h 45m
 - **2026-03-03** -> 4h 30m
 
 
-## Weekly Progress
+## 📅 Weekly Progress
 ---------------
 
 
 
-## Monthly Progress
+## 📅 Monthly Progress
 ----------------
 
 - **2025-10_to_2025-11** -> 75h 22m
