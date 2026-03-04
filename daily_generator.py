@@ -81,15 +81,31 @@ def ask_entries() -> list[dict[str, object]]:
     return entries
 
 
+def ask_int(label: str, default_value: int, min_value: int, max_value: int) -> int:
+    while True:
+        raw = input(f"Enter {label} [{default_value}]: ").strip()
+        if not raw:
+            return default_value
+        try:
+            value = int(raw)
+        except ValueError:
+            print(f"Invalid {label}. Please enter a number.")
+            continue
+        if value < min_value or value > max_value:
+            print(f"{label.capitalize()} must be between {min_value} and {max_value}.")
+            continue
+        return value
+
+
 def ask_log_date(default_date: date) -> date:
     while True:
-        raw = input(f"Enter date (YYYY-MM-DD) [default: {default_date.strftime('%Y-%m-%d')}]: ").strip()
-        if not raw:
-            return default_date
+        year = ask_int("year", default_date.year, 1970, 2100)
+        month = ask_int("month", default_date.month, 1, 12)
+        day = ask_int("day", default_date.day, 1, 31)
         try:
-            return datetime.strptime(raw, "%Y-%m-%d").date()
+            return date(year, month, day)
         except ValueError:
-            print("Invalid date format. Use YYYY-MM-DD.")
+            print("Invalid calendar date. Please try again.")
 
 
 def parse_args() -> argparse.Namespace:
