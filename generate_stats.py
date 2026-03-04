@@ -184,6 +184,31 @@ def month_sort_key(data: dict[str, Any], file_path: Path) -> datetime:
         return datetime.min
 
 
+def month_label(data: dict[str, Any], file_path: Path) -> str:
+    # Prefer file stem when it already matches YYYY-MM (e.g. 2026-02.yaml).
+    try:
+        datetime.strptime(file_path.stem, "%Y-%m")
+        return file_path.stem
+    except ValueError:
+        pass
+
+    if data.get("month"):
+        token = str(data["month"]).split("_to_")[0]
+        try:
+            datetime.strptime(token, "%Y-%m")
+            return token
+        except ValueError:
+            pass
+
+    if data.get("period_start"):
+        try:
+            return parse_date(data["period_start"]).strftime("%Y-%m")
+        except ValueError:
+            pass
+
+    return file_path.stem
+
+
 def load_monthly_logs(monthly_dir: Path) -> list[dict[str, Any]]:
     logs: list[dict[str, Any]] = []
     for file_path in sorted(monthly_dir.glob("*.yaml")):
@@ -193,11 +218,7 @@ def load_monthly_logs(monthly_dir: Path) -> list[dict[str, Any]]:
         if "overall_minutes" not in data:
             continue
 
-        label = data.get("month")
-        if not label and data.get("period_start") and data.get("period_end"):
-            label = f"{data['period_start']} -> {data['period_end']}"
-        if not label:
-            label = file_path.stem
+        label = month_label(data, file_path)
 
         category_totals: dict[str, int] = defaultdict(int)
         if isinstance(data.get("category_totals"), dict):
@@ -341,8 +362,8 @@ def build_readme(
     lines.append("")
 
     if monthly_logs:
-        start_period = monthly_logs[0]["sort_key"].strftime("%Y-%m-%d")
-        end_period = monthly_logs[-1]["period_end"].strftime("%Y-%m-%d")
+        start_period = monthly_logs[0]["sort_key"].strftime("%Y-%m")
+        end_period = monthly_logs[-1]["period_end"].strftime("%Y-%m")
         period_title = f"{start_period} -> {end_period}"
         lines.append(f"## Study Summary ({period_title})")
     else:
