@@ -1,0 +1,32 @@
+date: '2026-03-04'
+entries:
+- category: CTF
+  duration_minutes: 45
+  duration_hours: 0h 45m
+- category: TCM-Security
+  duration_minutes: 20
+  duration_hours: 0h 20m
+- category: TryHackMe
+  duration_minutes: 25
+  duration_hours: 0h 25m
+- category: TryHackMe
+  duration_minutes: 45
+  duration_hours: 0h 45m
+- category: TryHackMe
+  duration_minutes: 5
+  duration_hours: 0h 05m
+- category: CTF
+  duration_minutes: 40
+  duration_hours: 0h 40m
+- category: CTF
+  duration_minutes: 35
+  duration_hours: 0h 35m
+- category: General InfoSec
+  duration_minutes: 10
+  duration_hours: 0h 10m
+- category: General InfoSec
+  duration_minutes: 45
+  duration_hours: 0h 45m
+day_total_minutes: 270
+day_total_hours: 4h 30m
+created_at: '2026-03-05T07:02:43+03:00'

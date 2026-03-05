@@ -201,9 +201,12 @@ def choose_date(stdscr: curses.window, current: date) -> date:
 
 def prompt_minutes(stdscr: curses.window, category: str) -> int | None:
     while True:
-        raw = prompt_text(stdscr, "Duration", f"Minutes for '{category}':", "45")
+        raw = prompt_text(stdscr, "Duration", f"Minutes for '{category}':", "")
         if raw is None:
             return None
+        if raw == "":
+            show_message(stdscr, "Invalid Input", ["Please enter minutes."])
+            continue
         try:
             minutes = int(raw)
         except ValueError:
@@ -366,7 +369,7 @@ def add_review_entries(
                     continue
                 selected_category = selected
                 mode = "minutes"
-                input_value = "45"
+                input_value = ""
             elif key in (ord("q"), 27):
                 return sessions_logged
             continue
@@ -390,7 +393,7 @@ def add_review_entries(
                     continue
                 selected_category = category
                 mode = "minutes"
-                input_value = "45"
+                input_value = ""
                 continue
 
             if mode == "minutes":
