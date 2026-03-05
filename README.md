@@ -3,47 +3,10 @@
 
 **Weekly target:** 31h 30m
 
-### 2026-02-28 (Saturday)
-
-- CTF: 1h 01m
-- HackTheBox: 1h 31m
-- TCM-Security: 0h 15m
-- TryHackMe: 0h 58m
-
-**Today:** 3h 45m
-**Weekly progress:** 3h 45m / 31h 30m
-**Remaining this week:** 27h 45m
-
-### 2026-03-03 (Tuesday)
-
-- CTF: 1h 35m
-- General CS: 0h 08m
-- HackTheBox: 0h 22m
-- TCM-Security: 0h 20m
-- TryHackMe: 2h 05m
-
-**Today:** 4h 30m
-**Weekly progress:** 8h 15m / 31h 30m
-**Remaining this week:** 23h 15m
-
-### 2026-03-04 (Wednesday)
-
-- CTF: 2h 00m
-- General InfoSec: 0h 55m
-- TCM-Security: 0h 20m
-- TryHackMe: 1h 15m
-
-**Today:** 4h 30m
-**Weekly progress:** 12h 45m / 31h 30m
-**Remaining this week:** 18h 45m
-
 
 ## 📅 Daily Summary
 --------------
 
-- **2026-02-28** -> 3h 45m
-- **2026-03-03** -> 4h 30m
-- **2026-03-04** -> 4h 30m
 
 
 ## 📅 Weekly Progress
