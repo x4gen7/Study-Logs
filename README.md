@@ -3,10 +3,22 @@
 
 **Weekly target:** 31h 30m
 
+### 2026-03-06 (Friday)
+
+- CTF: 0h 54m
+- General InfoSec: 0h 09m
+- HackTheBox: 0h 51m
+- TryHackMe: 0h 21m
+
+**Today:** 2h 15m
+**Weekly progress:** 2h 15m / 31h 30m
+**Remaining this week:** 29h 15m
+
 
 ## 📅 Daily Summary
 --------------
 
+- **2026-03-06** -> 2h 15m
 
 
 ## 📅 Weekly Progress
