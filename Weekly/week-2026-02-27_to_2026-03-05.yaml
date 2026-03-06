@@ -1,12 +1,12 @@
 week_start: '2026-02-27'
 week_end: '2026-03-05'
 category_totals:
-  CTF: 276
+  CTF: 345
   TryHackMe: 258
-  HackTheBox: 113
+  HackTheBox: 158
+  General InfoSec: 61
   TCM-Security: 55
-  General InfoSec: 55
-  General CS: 8
-overall_minutes: 765
-overall_hours: 12h 45m
-created_at: '2026-03-05T19:45:57+03:00'
+  General CS: 23
+overall_minutes: 900
+overall_hours: 15h 00m
+created_at: '2026-03-06T05:46:42+03:00'
