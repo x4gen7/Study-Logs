@@ -14,11 +14,22 @@
 **Weekly progress:** 2h 15m / 31h 30m
 **Remaining this week:** 29h 15m
 
+### 2026-03-07 (Saturday)
+
+- General CS: 0h 22m
+- General InfoSec: 1h 38m
+- TryHackMe: 0h 15m
+
+**Today:** 2h 15m
+**Weekly progress:** 4h 30m / 31h 30m
+**Remaining this week:** 27h 00m
+
 
 ## 📅 Daily Summary
 --------------
 
 - **2026-03-06** -> 2h 15m
+- **2026-03-07** -> 2h 15m
 
 
 ## 📅 Weekly Progress
