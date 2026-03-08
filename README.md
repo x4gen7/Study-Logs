@@ -54,6 +54,7 @@
 
 ### ⏱ Total Study Time
 - **This week:** **15h 00m** (900 minutes)
+- **Off days:** 0
 
 ---
 
@@ -81,22 +82,28 @@
 - **2025-12** -> 77h 21m
 - **2026-01** -> 86h 21m
 - **2026-02** -> 64h 04m
+- **2026-03** -> 4h 30m | Off days: 1
 
 
 ## Study Summary
 
 ### Overall Total
-- **Total study time:** **418h 57m**
-- **Total minutes:** 25,137
+- **Total study time:** **423h 27m**
+- **Total minutes:** 25,407
+- **Total off days:** 1
 
 ### Category Totals
-- **TryHackMe:** 148h 27m
-- **HackTheBox:** 93h 09m
+- **TryHackMe:** 149h 03m
+- **HackTheBox:** 94h 00m
 - **INE-eJPT:** 76h 41m
-- **CTF:** 54h 42m
+- **CTF:** 55h 36m
 - **TCM-Security:** 21h 29m
-- **General CS:** 15h 16m
+- **General CS:** 15h 38m
 - **Book Penetration Testing - A Hands-On Introduction to Hacking:** 5h 10m
+- **General InfoSec:** 2h 58m
 - **Labex:** 1h 31m
-- **General InfoSec:** 1h 11m
 - **PortSwigger:** 0h 45m
+
+## Day Offs
+
+- 2026-03-08 "burntout"

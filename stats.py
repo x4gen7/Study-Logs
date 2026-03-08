@@ -311,6 +311,20 @@ def merge_missing_months_from_daily(
     return merged
 
 
+def build_day_off_lines(daily_logs: list[dict[str, Any]]) -> list[str]:
+    lines: list[str] = []
+    for day in daily_logs:
+        if day.get("status") != "off_day":
+            continue
+        date_label = day["date"].strftime("%Y-%m-%d")
+        reason = day.get("off_day_reason")
+        if reason:
+            lines.append(f'- {date_label} "{reason}"')
+        else:
+            lines.append(f"- {date_label}")
+    return lines
+
+
 def build_readme(
     daily_logs: list[dict[str, Any]],
     weekly_logs: list[dict[str, Any]],
@@ -474,6 +488,14 @@ def build_readme(
     else:
         lines.append("- No category totals available.")
 
+    lines.append("")
+    lines.append("## Day Offs")
+    lines.append("")
+    day_off_lines = build_day_off_lines(daily_logs)
+    if day_off_lines:
+        lines.extend(day_off_lines)
+    else:
+        lines.append("- No day offs logged.")
     lines.append("")
     return "\n".join(lines)
 
