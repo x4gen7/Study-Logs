@@ -83,7 +83,18 @@ def load_daily_logs(daily_dir: Path) -> list[dict[str, Any]]:
         except (TypeError, ValueError):
             continue
 
-        logs.append({"date": dt, "total": total, "categories": dict(categories)})
+        status = str(data.get("status") or "study_day").strip() or "study_day"
+        reason = data.get("off_day_reason")
+        if not isinstance(reason, str):
+            reason = None
+
+        logs.append({
+            "date": dt,
+            "total": total,
+            "categories": dict(categories),
+            "status": status,
+            "off_day_reason": reason,
+        })
     return logs
 
 
@@ -98,10 +109,13 @@ def build_weekly_groups(daily_logs: list[dict[str, Any]]) -> dict[datetime, dict
                 "overall_minutes": 0,
                 "category_totals": defaultdict(int),
                 "days_present": 0,
+                "off_days": 0,
             }
         g = groups[start]
         g["overall_minutes"] += log["total"]
         g["days_present"] += 1
+        if log.get("status") == "off_day":
+            g["off_days"] += 1
         for cat, mins in log["categories"].items():
             g["category_totals"][cat] += mins
     return groups
@@ -155,6 +169,8 @@ def main() -> int:
             "category_totals": category_totals,
             "overall_minutes": int(group["overall_minutes"]),
             "overall_hours": hm(int(group["overall_minutes"])),
+            "days_present": int(group["days_present"]),
+            "off_days": int(group["off_days"]),
             "created_at": datetime.now().astimezone().isoformat(timespec="seconds"),
         }
         out_file.write_text(yaml.safe_dump(payload, sort_keys=False, allow_unicode=False), encoding="utf-8")

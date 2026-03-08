@@ -173,6 +173,18 @@ def show_message(stdscr: curses.window, title: str, lines: list[str]) -> None:
     stdscr.getch()
 
 
+def prompt_optional_text(
+    stdscr: curses.window,
+    title: str,
+    prompt: str,
+    default: str = "",
+) -> str | None:
+    value = prompt_text(stdscr, title, prompt, default)
+    if value is None:
+        return None
+    return value.strip()
+
+
 def choose_date(stdscr: curses.window, current: date) -> date:
     while True:
         year_raw = prompt_text(stdscr, "Set Log Date", "Enter year:", str(current.year))
@@ -445,26 +457,28 @@ def run_tui(
     stdscr: curses.window,
     initial_date: date,
     categories: list[str],
-) -> tuple[date, list[dict[str, object]], bool]:
+) -> tuple[date, list[dict[str, object]], bool, str | None]:
     curses.curs_set(0)
     init_colors()
     entries: list[dict[str, object]] = []
     log_date = initial_date
     sessions_logged = 0
+    off_day_reason: str | None = None
 
     while True:
         day_total = sum(int(item["duration_minutes"]) for item in entries)
         options = [
             f"Set log date ({log_date.strftime('%Y-%m-%d')})",
             f"Add/Review entries ({len(entries)})",
+            "Mark off day and save",
             "Save log and exit",
             "Exit without saving",
         ]
         footer = f"Total today: {day_total}m ({hm(day_total)})"
         choice = menu(stdscr, "Daily Log TUI", options, footer)
 
-        if choice in (-1, 3):
-            return log_date, entries, False
+        if choice in (-1, 4):
+            return log_date, entries, False, None
 
         if choice == 0:
             log_date = choose_date(stdscr, log_date)
@@ -475,10 +489,21 @@ def run_tui(
             continue
 
         if choice == 2:
+            reason = prompt_optional_text(
+                stdscr,
+                "Off Day",
+                "Optional off-day reason:",
+                "",
+            )
+            if reason is None:
+                continue
+            return log_date, [], True, reason or None
+
+        if choice == 3:
             if not entries:
                 show_message(stdscr, "Nothing to Save", ["Add at least one entry first."])
                 continue
-            return log_date, entries, True
+            return log_date, entries, True, off_day_reason
 
 
 def main() -> int:
@@ -490,7 +515,7 @@ def main() -> int:
         return 1
 
     base = Path(__file__).resolve().parent
-    log_date, entries, should_save = curses.wrapper(run_tui, cli_date, DEFAULT_CATEGORIES)
+    log_date, entries, should_save, off_day_reason = curses.wrapper(run_tui, cli_date, DEFAULT_CATEGORIES)
     if not should_save:
         print("Exited without saving.")
         return 0
@@ -503,6 +528,12 @@ def main() -> int:
         "day_total_hours": hm(day_total_minutes),
         "created_at": datetime.now().astimezone().isoformat(timespec="seconds"),
     }
+    if entries:
+        payload["status"] = "study_day"
+    else:
+        payload["status"] = "off_day"
+        if off_day_reason:
+            payload["off_day_reason"] = off_day_reason
 
     daily_dir = base / "Daily"
     daily_dir.mkdir(parents=True, exist_ok=True)

@@ -115,10 +115,17 @@ def load_daily_logs(daily_dir: Path) -> list[dict[str, Any]]:
             print(f"[WARN] Skipping {file_path}: invalid day_total_minutes", file=sys.stderr)
             continue
 
+        status = str(data.get("status") or "study_day").strip() or "study_day"
+        reason = data.get("off_day_reason")
+        if not isinstance(reason, str):
+            reason = None
+
         logs.append({
             "date": d,
             "categories": dict(sorted(categories.items())),
             "total": total,
+            "status": status,
+            "off_day_reason": reason,
         })
 
     logs.sort(key=lambda item: item["date"])
@@ -275,8 +282,13 @@ def build_readme(
         lines.append(f"### {day['date'].strftime('%Y-%m-%d (%A)')}")
         lines.append("")
 
-        for cat, mins in day["categories"].items():
-            lines.append(f"- {cat}: {hm(mins)}")
+        if day.get("status") == "off_day":
+            lines.append("- Off day")
+            if day.get("off_day_reason"):
+                lines.append(f"- Reason: {day['off_day_reason']}")
+        else:
+            for cat, mins in day["categories"].items():
+                lines.append(f"- {cat}: {hm(mins)}")
 
         lines.append("")
         lines.append(f"**Today:** {hm(day['total'])}")
@@ -290,7 +302,13 @@ def build_readme(
     lines.append("--------------")
     lines.append("")
     for day in daily_logs:
-        lines.append(f"- **{day['date'].strftime('%Y-%m-%d')}** -> {hm(day['total'])}")
+        if day.get("status") == "off_day":
+            label = "Off day"
+            if day.get("off_day_reason"):
+                label += f" ({day['off_day_reason']})"
+            lines.append(f"- **{day['date'].strftime('%Y-%m-%d')}** -> {label}")
+        else:
+            lines.append(f"- **{day['date'].strftime('%Y-%m-%d')}** -> {hm(day['total'])}")
 
     # Weekly summary
     lines.append("")
