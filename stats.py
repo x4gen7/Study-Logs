@@ -164,6 +164,7 @@ def load_weekly_logs(base: Path, max_logs: int = 7) -> list[dict[str, Any]]:
             "range": f"{start.strftime('%Y-%m-%d')} -> {end.strftime('%Y-%m-%d')}",
             "total": to_int(data.get("overall_minutes"), default=0),
             "categories": category_totals,
+            "off_days": to_int(data.get("off_days"), default=0),
         })
 
     logs.sort(key=lambda item: (item["start"], item["end"]))
@@ -246,9 +247,68 @@ def load_monthly_logs(monthly_dir: Path) -> list[dict[str, Any]]:
             "categories": dict(category_totals),
             "sort_key": sort_key,
             "period_end": period_end,
+            "off_days": 0,
         })
 
     return logs
+
+
+def attach_monthly_off_days(
+    monthly_logs: list[dict[str, Any]],
+    daily_logs: list[dict[str, Any]],
+) -> list[dict[str, Any]]:
+    off_days_by_label: dict[str, int] = defaultdict(int)
+    for day in daily_logs:
+        if day.get("status") != "off_day":
+            continue
+        off_days_by_label[day["date"].strftime("%Y-%m")] += 1
+
+    enriched: list[dict[str, Any]] = []
+    for month in monthly_logs:
+        item = dict(month)
+        item["off_days"] = off_days_by_label.get(str(month["label"]), 0)
+        enriched.append(item)
+    return enriched
+
+
+def merge_missing_months_from_daily(
+    monthly_logs: list[dict[str, Any]],
+    daily_logs: list[dict[str, Any]],
+) -> list[dict[str, Any]]:
+    existing_labels = {str(month["label"]) for month in monthly_logs}
+    daily_months: dict[str, dict[str, Any]] = {}
+
+    for day in daily_logs:
+        label = day["date"].strftime("%Y-%m")
+        if label in existing_labels:
+            continue
+
+        if label not in daily_months:
+            sort_key = datetime.strptime(label, "%Y-%m")
+            daily_months[label] = {
+                "label": label,
+                "total": 0,
+                "categories": defaultdict(int),
+                "sort_key": sort_key,
+                "period_end": day["date"],
+                "off_days": 0,
+            }
+
+        month = daily_months[label]
+        month["total"] += int(day["total"])
+        month["period_end"] = max(month["period_end"], day["date"])
+        if day.get("status") == "off_day":
+            month["off_days"] += 1
+        for cat, mins in day["categories"].items():
+            month["categories"][cat] += int(mins)
+
+    merged = list(monthly_logs)
+    for month in daily_months.values():
+        month["categories"] = dict(month["categories"])
+        merged.append(month)
+
+    merged.sort(key=lambda item: item["sort_key"])
+    return merged
 
 
 def build_readme(
@@ -322,7 +382,11 @@ def build_readme(
         weekly_logs_to_show = weekly_logs
 
     for idx, week in enumerate(weekly_logs_to_show, start=1):
-        lines.append(f"- **{week['range']} (Week-{idx})** -> {hm(week['total'])}")
+        week_line = f"- **{week['range']} (Week-{idx})** -> {hm(week['total'])}"
+        off_days = int(week.get("off_days", 0))
+        if off_days > 0:
+            week_line += f" | Off days: {off_days}"
+        lines.append(week_line)
 
     # Weekly detailed summary for latest week and 4-week span progress
     if weekly_logs_to_show:
@@ -343,6 +407,7 @@ def build_readme(
         lines.append("")
         lines.append("### ⏱ Total Study Time")
         lines.append(f"- **This week:** **{hm(latest_week['total'])}** ({latest_week['total']} minutes)")
+        lines.append(f"- **Off days:** {int(latest_week.get('off_days', 0))}")
         lines.append("")
         lines.append("---")
         lines.append("")
@@ -371,7 +436,11 @@ def build_readme(
     lines.append("")
     if monthly_logs:
         for month in monthly_logs:
-            lines.append(f"- **{month['label']}** -> {hm(month['total'])}")
+            month_line = f"- **{month['label']}** -> {hm(month['total'])}"
+            off_days = int(month.get("off_days", 0))
+            if off_days > 0:
+                month_line += f" | Off days: {off_days}"
+            lines.append(month_line)
     else:
         lines.append("- No monthly logs found.")
 
@@ -385,8 +454,10 @@ def build_readme(
     lines.append("### Overall Total")
 
     total_minutes = sum(month["total"] for month in monthly_logs)
+    total_off_days = sum(int(month.get("off_days", 0)) for month in monthly_logs)
     lines.append(f"- **Total study time:** **{hm(total_minutes)}**")
     lines.append(f"- **Total minutes:** {total_minutes:,}")
+    lines.append(f"- **Total off days:** {total_off_days}")
 
     category_totals: dict[str, int] = defaultdict(int)
     for month in monthly_logs:
@@ -433,6 +504,8 @@ def main() -> int:
     daily_logs = load_daily_logs(daily_dir)
     weekly_logs = load_weekly_logs(base, max_logs=max(args.weekly_window, 0))
     monthly_logs = load_monthly_logs(monthly_dir)
+    monthly_logs = attach_monthly_off_days(monthly_logs, daily_logs)
+    monthly_logs = merge_missing_months_from_daily(monthly_logs, daily_logs)
 
     markdown = build_readme(
         daily_logs=daily_logs,
