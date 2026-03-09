@@ -100,7 +100,6 @@
 ### Overall Total
 - **Total study time:** **418h 57m**
 - **Total minutes:** 25,137
-- **Total off days:** 0
 
 ### Category Totals
 - **TryHackMe:** 148h 27m
@@ -113,8 +112,4 @@
 - **Labex:** 1h 31m
 - **General InfoSec:** 1h 11m
 - **PortSwigger:** 0h 45m
-
-## Day Offs
-
-- 2026-03-08 "burntout"
-- 2026-03-09 "off day"
+- **Day Offs:** 0

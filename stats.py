@@ -253,20 +253,6 @@ def load_monthly_logs(monthly_dir: Path) -> list[dict[str, Any]]:
     return logs
 
 
-def build_day_off_lines(daily_logs: list[dict[str, Any]]) -> list[str]:
-    lines: list[str] = []
-    for day in daily_logs:
-        if day.get("status") != "off_day":
-            continue
-        date_label = day["date"].strftime("%Y-%m-%d")
-        reason = day.get("off_day_reason")
-        if reason:
-            lines.append(f'- {date_label} "{reason}"')
-        else:
-            lines.append(f"- {date_label}")
-    return lines
-
-
 def build_readme(
     daily_logs: list[dict[str, Any]],
     weekly_logs: list[dict[str, Any]],
@@ -394,11 +380,7 @@ def build_readme(
     lines.append("")
     if monthly_logs:
         for month in monthly_logs:
-            month_line = f"- **{month['label']}** -> {hm(month['total'])}"
-            off_days = int(month.get("off_days", 0))
-            if off_days > 0:
-                month_line += f" | Off days: {off_days}"
-            lines.append(month_line)
+            lines.append(f"- **{month['label']}** -> {hm(month['total'])}")
     else:
         lines.append("- No monthly logs found.")
 
@@ -415,7 +397,6 @@ def build_readme(
     total_off_days = sum(int(month.get("off_days", 0)) for month in monthly_logs)
     lines.append(f"- **Total study time:** **{hm(total_minutes)}**")
     lines.append(f"- **Total minutes:** {total_minutes:,}")
-    lines.append(f"- **Total off days:** {total_off_days}")
 
     category_totals: dict[str, int] = defaultdict(int)
     for month in monthly_logs:
@@ -431,15 +412,8 @@ def build_readme(
             lines.append(f"- **{cat}:** {hm(mins)}")
     else:
         lines.append("- No category totals available.")
+    lines.append(f"- **Day Offs:** {total_off_days}")
 
-    lines.append("")
-    lines.append("## Day Offs")
-    lines.append("")
-    day_off_lines = build_day_off_lines(daily_logs)
-    if day_off_lines:
-        lines.extend(day_off_lines)
-    else:
-        lines.append("- No day offs logged.")
     lines.append("")
     return "\n".join(lines)
 
