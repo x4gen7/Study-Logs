@@ -33,6 +33,15 @@
 **Weekly progress:** 4h 30m / 31h 30m
 **Remaining this week:** 27h 00m
 
+### 2026-03-09 (Monday)
+
+- Off day
+- Reason: off day
+
+**Today:** 0h 00m
+**Weekly progress:** 4h 30m / 31h 30m
+**Remaining this week:** 27h 00m
+
 
 ## 📅 Daily Summary
 --------------
@@ -40,6 +49,7 @@
 - **2026-03-06** -> 2h 15m
 - **2026-03-07** -> 2h 15m
 - **2026-03-08** -> Off day (burntout)
+- **2026-03-09** -> Off day (off day)
 
 
 ## 📅 Weekly Progress
@@ -71,6 +81,7 @@
 ### 🎯 4-Week Target Progress
 - **4-week target:** 126h 00m
 - **Studied so far (1 / 4 weeks):** **15h 00m**
+- **Off days in 1-week span:** 0
 - **Remaining to hit 4-week target:** **111h 00m**
 
 
@@ -82,28 +93,28 @@
 - **2025-12** -> 77h 21m
 - **2026-01** -> 86h 21m
 - **2026-02** -> 64h 04m
-- **2026-03** -> 4h 30m | Off days: 1
 
 
 ## Study Summary
 
 ### Overall Total
-- **Total study time:** **423h 27m**
-- **Total minutes:** 25,407
-- **Total off days:** 1
+- **Total study time:** **418h 57m**
+- **Total minutes:** 25,137
+- **Total off days:** 0
 
 ### Category Totals
-- **TryHackMe:** 149h 03m
-- **HackTheBox:** 94h 00m
+- **TryHackMe:** 148h 27m
+- **HackTheBox:** 93h 09m
 - **INE-eJPT:** 76h 41m
-- **CTF:** 55h 36m
+- **CTF:** 54h 42m
 - **TCM-Security:** 21h 29m
-- **General CS:** 15h 38m
+- **General CS:** 15h 16m
 - **Book Penetration Testing - A Hands-On Introduction to Hacking:** 5h 10m
-- **General InfoSec:** 2h 58m
 - **Labex:** 1h 31m
+- **General InfoSec:** 1h 11m
 - **PortSwigger:** 0h 45m
 
 ## Day Offs
 
 - 2026-03-08 "burntout"
+- 2026-03-09 "off day"
