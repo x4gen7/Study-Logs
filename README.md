@@ -42,6 +42,15 @@
 **Weekly progress:** 4h 30m / 31h 30m
 **Remaining this week:** 27h 00m
 
+### 2026-03-10 (Tuesday)
+
+- Off day
+- Reason: off day
+
+**Today:** 0h 00m
+**Weekly progress:** 4h 30m / 31h 30m
+**Remaining this week:** 27h 00m
+
 
 ## 📅 Daily Summary
 --------------
@@ -50,6 +59,7 @@
 - **2026-03-07** -> 2h 15m
 - **2026-03-08** -> Off day (burntout)
 - **2026-03-09** -> Off day (off day)
+- **2026-03-10** -> Off day (off day)
 
 
 ## 📅 Weekly Progress
