@@ -3,106 +3,43 @@
 
 **Weekly target:** 31h 30m
 
-### 2026-03-06 (Friday)
-
-- CTF: 0h 54m
-- General InfoSec: 0h 09m
-- HackTheBox: 0h 51m
-- TryHackMe: 0h 21m
-
-**Today:** 2h 15m
-**Weekly progress:** 2h 15m / 31h 30m
-**Remaining this week:** 29h 15m
-
-### 2026-03-07 (Saturday)
-
-- General CS: 0h 22m
-- General InfoSec: 1h 38m
-- TryHackMe: 0h 15m
-
-**Today:** 2h 15m
-**Weekly progress:** 4h 30m / 31h 30m
-**Remaining this week:** 27h 00m
-
-### 2026-03-08 (Sunday)
-
-- Off day
-- Reason: burntout
-
-**Today:** 0h 00m
-**Weekly progress:** 4h 30m / 31h 30m
-**Remaining this week:** 27h 00m
-
-### 2026-03-09 (Monday)
-
-- Off day
-- Reason: off day
-
-**Today:** 0h 00m
-**Weekly progress:** 4h 30m / 31h 30m
-**Remaining this week:** 27h 00m
-
-### 2026-03-10 (Tuesday)
-
-- Off day
-- Reason: off day
-
-**Today:** 0h 00m
-**Weekly progress:** 4h 30m / 31h 30m
-**Remaining this week:** 27h 00m
-
-### 2026-03-11 (Wednesday)
-
-- Off day
-- Reason: off day
-
-**Today:** 0h 00m
-**Weekly progress:** 4h 30m / 31h 30m
-**Remaining this week:** 27h 00m
-
 
 ## 📅 Daily Summary
 --------------
 
-- **2026-03-06** -> 2h 15m
-- **2026-03-07** -> 2h 15m
-- **2026-03-08** -> Off day (burntout)
-- **2026-03-09** -> Off day (off day)
-- **2026-03-10** -> Off day (off day)
-- **2026-03-11** -> Off day (off day)
 
 
 ## 📅 Weekly Progress
 ---------------
 
 - **2026-02-27 -> 2026-03-05 (Week-1)** -> 15h 00m
+- **2026-03-06 -> 2026-03-12 (Week-2)** -> 6h 45m | Off days: 4
 
 ## 📅 Weekly Study Summary
-**Week:** 2026-02-27 -> 2026-03-05 (Friday -> Thursday)
+**Week:** 2026-03-06 -> 2026-03-12 (Friday -> Thursday)
 
 ---
 
 ### ⏱ Total Study Time
-- **This week:** **15h 00m** (900 minutes)
-- **Off days:** 0
+- **This week:** **6h 45m** (405 minutes)
+- **Off days:** 4
 
 ---
 
 ### 🧠 Category Breakdown
-- **CTF:** 5h 45m
-- **TryHackMe:** 4h 18m
-- **HackTheBox:** 2h 38m
-- **General InfoSec:** 1h 01m
-- **TCM-Security:** 0h 55m
-- **General CS:** 0h 23m
+- **General InfoSec:** 2h 15m
+- **CTF:** 1h 56m
+- **HackTheBox:** 1h 06m
+- **TryHackMe:** 1h 06m
+- **General CS:** 0h 22m
 
 ---
 
 ### 🎯 4-Week Target Progress
 - **4-week target:** 126h 00m
-- **Studied so far (1 / 4 weeks):** **15h 00m**
-- **Off days in 1-week span:** 0
-- **Remaining to hit 4-week target:** **111h 00m**
+- **Studied so far (2 / 4 weeks):** **21h 45m**
+- **Off days in 2-week span:** 4
+- **Remaining to hit 4-week target:** **104h 15m**
 
 
 ## 📅 Monthly Progress

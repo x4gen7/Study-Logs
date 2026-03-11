@@ -1,0 +1,27 @@
+date: '2026-03-12'
+entries:
+- category: General InfoSec
+  duration_minutes: 8
+  duration_hours: 0h 08m
+- category: CTF
+  duration_minutes: 17
+  duration_hours: 0h 17m
+- category: TryHackMe
+  duration_minutes: 20
+  duration_hours: 0h 20m
+- category: TryHackMe
+  duration_minutes: 10
+  duration_hours: 0h 10m
+- category: HackTheBox
+  duration_minutes: 15
+  duration_hours: 0h 15m
+- category: General InfoSec
+  duration_minutes: 20
+  duration_hours: 0h 20m
+- category: CTF
+  duration_minutes: 45
+  duration_hours: 0h 45m
+day_total_minutes: 135
+day_total_hours: 2h 15m
+created_at: '2026-03-12T01:49:45+03:00'
+status: study_day
