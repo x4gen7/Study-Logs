@@ -3,10 +3,20 @@
 
 **Weekly target:** 31h 30m
 
+### 2026-03-13 (Friday)
+
+- CTF: 0h 48m
+- General InfoSec: 0h 20m
+
+**Today:** 1h 08m
+**Weekly progress:** 1h 08m / 31h 30m
+**Remaining this week:** 30h 22m
+
 
 ## 📅 Daily Summary
 --------------
 
+- **2026-03-13** -> 1h 08m
 
 
 ## 📅 Weekly Progress
