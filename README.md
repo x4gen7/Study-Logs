@@ -16,22 +16,23 @@
 - **2026-03-06 -> 2026-03-12 (Week-2)** -> 6h 45m | Off days: 4
 
 ## 📅 Weekly Study Summary
-**Week:** 2026-03-06 -> 2026-03-12 (Friday -> Thursday)
+**Weeks:** 2026-02-27 -> 2026-03-12 (Friday -> Thursday)
 
 ---
 
 ### ⏱ Total Study Time
-- **This week:** **6h 45m** (405 minutes)
+- **This span:** **21h 45m** (1305 minutes)
 - **Off days:** 4
 
 ---
 
 ### 🧠 Category Breakdown
-- **General InfoSec:** 2h 15m
-- **CTF:** 1h 56m
-- **HackTheBox:** 1h 06m
-- **TryHackMe:** 1h 06m
-- **General CS:** 0h 22m
+- **CTF:** 7h 41m
+- **TryHackMe:** 5h 24m
+- **HackTheBox:** 3h 44m
+- **General InfoSec:** 3h 16m
+- **TCM-Security:** 0h 55m
+- **General CS:** 0h 45m
 
 ---
 

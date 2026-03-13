@@ -332,36 +332,40 @@ def build_readme(
 
     # Weekly detailed summary for latest week and 4-week span progress
     if weekly_logs_to_show:
-        latest_week = weekly_logs_to_show[-1]
         span_weeks = weekly_logs_to_show[-4:]
         studied_so_far = sum(item["total"] for item in span_weeks)
         off_days_in_span = sum(int(item.get("off_days", 0)) for item in span_weeks)
         four_week_target_min = weekly_target_min * 4
         remaining = max(four_week_target_min - studied_so_far, 0)
+        span_start = span_weeks[0]["start"]
+        span_end = span_weeks[-1]["end"]
+        span_categories: dict[str, int] = defaultdict(int)
+        for week in span_weeks:
+            for cat, mins in week.get("categories", {}).items():
+                span_categories[cat] += int(mins)
 
         lines.append("")
         lines.append("## 📅 Weekly Study Summary")
         lines.append(
-            f"**Week:** {latest_week['start'].strftime('%Y-%m-%d')} -> {latest_week['end'].strftime('%Y-%m-%d')} "
+            f"**Weeks:** {span_start.strftime('%Y-%m-%d')} -> {span_end.strftime('%Y-%m-%d')} "
             "(Friday -> Thursday)"
         )
         lines.append("")
         lines.append("---")
         lines.append("")
         lines.append("### ⏱ Total Study Time")
-        lines.append(f"- **This week:** **{hm(latest_week['total'])}** ({latest_week['total']} minutes)")
-        lines.append(f"- **Off days:** {int(latest_week.get('off_days', 0))}")
+        lines.append(f"- **This span:** **{hm(studied_so_far)}** ({studied_so_far} minutes)")
+        lines.append(f"- **Off days:** {off_days_in_span}")
         lines.append("")
         lines.append("---")
         lines.append("")
         lines.append("### 🧠 Category Breakdown")
 
-        latest_categories = latest_week.get("categories", {})
-        if latest_categories:
-            for cat, mins in sorted(latest_categories.items(), key=lambda item: item[1], reverse=True):
+        if span_categories:
+            for cat, mins in sorted(span_categories.items(), key=lambda item: item[1], reverse=True):
                 lines.append(f"- **{cat}:** {hm(mins)}")
         else:
-            lines.append("- No category data for this week.")
+            lines.append("- No category data for this span.")
 
         lines.append("")
         lines.append("---")
