@@ -31,6 +31,15 @@
 **Weekly progress:** 3h 23m / 31h 30m
 **Remaining this week:** 28h 07m
 
+### 2026-03-16 (Monday)
+
+- Off day
+- Reason: off
+
+**Today:** 0h 00m
+**Weekly progress:** 3h 23m / 31h 30m
+**Remaining this week:** 28h 07m
+
 
 ## 📅 Daily Summary
 --------------
@@ -38,6 +47,7 @@
 - **2026-03-13** -> 1h 08m
 - **2026-03-14** -> Off day (off day)
 - **2026-03-15** -> 2h 15m
+- **2026-03-16** -> Off day (off)
 
 
 ## 📅 Weekly Progress
