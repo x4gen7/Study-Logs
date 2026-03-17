@@ -40,6 +40,17 @@
 **Weekly progress:** 3h 23m / 31h 30m
 **Remaining this week:** 28h 07m
 
+### 2026-03-17 (Tuesday)
+
+- General CS: 0h 20m
+- General InfoSec: 0h 46m
+- HackTheBox: 0h 57m
+- TryHackMe: 0h 38m
+
+**Today:** 2h 41m
+**Weekly progress:** 6h 04m / 31h 30m
+**Remaining this week:** 25h 26m
+
 
 ## 📅 Daily Summary
 --------------
@@ -48,6 +59,7 @@
 - **2026-03-14** -> Off day (off day)
 - **2026-03-15** -> 2h 15m
 - **2026-03-16** -> Off day (off)
+- **2026-03-17** -> 2h 41m
 
 
 ## 📅 Weekly Progress
