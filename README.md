@@ -3,10 +3,20 @@
 
 **Weekly target:** 31h 30m
 
+### 2026-03-20 (Friday)
+
+- Off day
+- Reason: Eid Day
+
+**Today:** 0h 00m
+**Weekly progress:** 0h 00m / 31h 30m
+**Remaining this week:** 31h 30m
+
 
 ## 📅 Daily Summary
 --------------
 
+- **2026-03-20** -> Off day (Eid Day)
 
 
 ## 📅 Weekly Progress
