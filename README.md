@@ -12,11 +12,22 @@
 **Weekly progress:** 0h 00m / 31h 30m
 **Remaining this week:** 31h 30m
 
+### 2026-03-22 (Sunday)
+
+- HackTheBox: 1h 48m
+- TCM-Security: 0h 15m
+- TryHackMe: 0h 57m
+
+**Today:** 3h 00m
+**Weekly progress:** 3h 00m / 31h 30m
+**Remaining this week:** 28h 30m
+
 
 ## 📅 Daily Summary
 --------------
 
 - **2026-03-20** -> Off day (Eid Day)
+- **2026-03-22** -> 3h 00m
 
 
 ## 📅 Weekly Progress

@@ -1,0 +1,24 @@
+date: '2026-03-22'
+entries:
+- category: HackTheBox
+  duration_minutes: 45
+  duration_hours: 0h 45m
+- category: HackTheBox
+  duration_minutes: 45
+  duration_hours: 0h 45m
+- category: TryHackMe
+  duration_minutes: 45
+  duration_hours: 0h 45m
+- category: HackTheBox
+  duration_minutes: 18
+  duration_hours: 0h 18m
+- category: TryHackMe
+  duration_minutes: 12
+  duration_hours: 0h 12m
+- category: TCM-Security
+  duration_minutes: 15
+  duration_hours: 0h 15m
+day_total_minutes: 180
+day_total_hours: 3h 00m
+created_at: '2026-03-22T00:36:26+03:00'
+status: study_day
