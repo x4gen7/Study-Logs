@@ -33,6 +33,18 @@
 **Weekly progress:** 7h 01m / 31h 30m
 **Remaining this week:** 24h 29m
 
+### 2026-03-23 (Monday)
+
+- CTF: 0h 05m
+- General InfoSec: 0h 52m
+- HackTheBox: 1h 05m
+- TCM-Security: 0h 28m
+- TryHackMe: 0h 45m
+
+**Today:** 3h 15m
+**Weekly progress:** 10h 16m / 31h 30m
+**Remaining this week:** 21h 14m
+
 
 ## 📅 Daily Summary
 --------------
@@ -40,6 +52,7 @@
 - **2026-03-20** -> Off day (Eid Day)
 - **2026-03-21** -> 3h 00m
 - **2026-03-22** -> 4h 01m
+- **2026-03-23** -> 3h 15m
 
 
 ## 📅 Weekly Progress
