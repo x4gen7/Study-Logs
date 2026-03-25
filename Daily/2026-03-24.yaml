@@ -1,0 +1,24 @@
+date: '2026-03-24'
+entries:
+- category: HackTheBox
+  duration_minutes: 19
+  duration_hours: 0h 19m
+- category: General InfoSec
+  duration_minutes: 26
+  duration_hours: 0h 26m
+- category: CTF
+  duration_minutes: 17
+  duration_hours: 0h 17m
+- category: TryHackMe
+  duration_minutes: 28
+  duration_hours: 0h 28m
+- category: TryHackMe
+  duration_minutes: 45
+  duration_hours: 0h 45m
+- category: book The Web Application Hackers Handbook
+  duration_minutes: 15
+  duration_hours: 0h 15m
+day_total_minutes: 150
+day_total_hours: 2h 30m
+created_at: '2026-03-25T07:39:25+03:00'
+status: study_day
