@@ -66,6 +66,17 @@
 **Weekly progress:** 12h 46m / 31h 30m
 **Remaining this week:** 18h 44m
 
+### 2026-03-26 (Thursday)
+
+- CTF: 0h 46m
+- General CS: 0h 54m
+- General InfoSec: 1h 20m
+- TryHackMe: 1h 30m
+
+**Today:** 4h 30m
+**Weekly progress:** 17h 16m / 31h 30m
+**Remaining this week:** 14h 14m
+
 
 ## 📅 Daily Summary
 --------------
@@ -76,6 +87,7 @@
 - **2026-03-23** -> 3h 15m
 - **2026-03-24** -> 2h 30m
 - **2026-03-25** -> Off day (burntout)
+- **2026-03-26** -> 4h 30m
 
 
 ## 📅 Weekly Progress
@@ -84,34 +96,36 @@
 - **2026-02-27 -> 2026-03-05 (Week-1)** -> 15h 00m
 - **2026-03-06 -> 2026-03-12 (Week-2)** -> 6h 45m | Off days: 4
 - **2026-03-13 -> 2026-03-19 (Week-3)** -> 8h 19m | Off days: 3
+- **2026-03-20 -> 2026-03-26 (Week-4)** -> 17h 16m | Off days: 2
 
 ## 📅 Weekly Study Summary
-**Weeks:** 2026-02-27 -> 2026-03-19 (Friday -> Thursday)
+**Weeks:** 2026-02-27 -> 2026-03-26 (Friday -> Thursday)
 
 ---
 
 ### ⏱ Total Study Time
-- **This span:** **30h 04m** (1804 minutes)
-- **Off days:** 7
+- **This span:** **47h 20m** (2840 minutes)
+- **Off days:** 9
 
 ---
 
 ### 🧠 Category Breakdown
-- **CTF:** 9h 00m
-- **TryHackMe:** 6h 27m
-- **General InfoSec:** 5h 07m
-- **HackTheBox:** 5h 05m
-- **TCM-Security:** 2h 15m
-- **General CS:** 1h 35m
+- **CTF:** 10h 59m
+- **TryHackMe:** 10h 52m
+- **HackTheBox:** 10h 26m
+- **General InfoSec:** 8h 36m
+- **TCM-Security:** 3h 08m
+- **General CS:** 2h 29m
 - **Book The Hacker Playbook 3:** 0h 35m
+- **book The Web Application Hackers Handbook:** 0h 15m
 
 ---
 
 ### 🎯 4-Week Target Progress
 - **4-week target:** 126h 00m
-- **Studied so far (3 / 4 weeks):** **30h 04m**
-- **Off days in 3-week span:** 7
-- **Remaining to hit 4-week target:** **95h 56m**
+- **Studied so far (4 / 4 weeks):** **47h 20m**
+- **Off days in 4-week span:** 9
+- **Remaining to hit 4-week target:** **78h 40m**
 
 
 ## 📅 Monthly Progress
@@ -122,23 +136,26 @@
 - **2025-12** -> 77h 21m
 - **2026-01** -> 86h 21m
 - **2026-02** -> 64h 04m
+- **2026-03** -> 47h 20m
 
 
 ## Study Summary
 
 ### Overall Total
-- **Total study time:** **418h 57m**
-- **Total minutes:** 25,137
+- **Total study time:** **466h 17m**
+- **Total minutes:** 27,977
 
 ### Category Totals
-- **TryHackMe:** 148h 27m
-- **HackTheBox:** 93h 09m
+- **TryHackMe:** 159h 19m
+- **HackTheBox:** 103h 35m
 - **INE-eJPT:** 76h 41m
-- **CTF:** 54h 42m
-- **TCM-Security:** 21h 29m
-- **General CS:** 15h 16m
+- **CTF:** 65h 41m
+- **TCM-Security:** 24h 37m
+- **General CS:** 17h 45m
+- **General InfoSec:** 9h 47m
 - **Book Penetration Testing - A Hands-On Introduction to Hacking:** 5h 10m
 - **Labex:** 1h 31m
-- **General InfoSec:** 1h 11m
 - **PortSwigger:** 0h 45m
-- **Day Offs:** 0
+- **Book The Hacker Playbook 3:** 0h 35m
+- **book The Web Application Hackers Handbook:** 0h 15m
+- **Day Offs:** 9
