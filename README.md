@@ -3,10 +3,20 @@
 
 **Weekly target:** 31h 30m
 
+### 2026-03-27 (Friday)
+
+- HackTheBox: 0h 07m
+- TryHackMe: 0h 38m
+
+**Today:** 0h 45m
+**Weekly progress:** 0h 45m / 31h 30m
+**Remaining this week:** 30h 45m
+
 
 ## 📅 Daily Summary
 --------------
 
+- **2026-03-27** -> 0h 45m
 
 
 ## 📅 Weekly Progress
