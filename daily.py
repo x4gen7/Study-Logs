@@ -18,9 +18,54 @@ DEFAULT_CATEGORIES = [
     "General InfoSec",
 ]
 
+CATEGORIES_FILE = "categories.yaml"
+
 
 def hm(minutes: int) -> str:
     return f"{minutes // 60}h {minutes % 60:02d}m"
+
+
+def unique_preserving_order(values: list[str]) -> list[str]:
+    seen: set[str] = set()
+    unique: list[str] = []
+    for value in values:
+        name = str(value).strip()
+        if not name or name in seen:
+            continue
+        seen.add(name)
+        unique.append(name)
+    return unique
+
+
+def load_categories(base: Path) -> list[str]:
+    categories_file = base / CATEGORIES_FILE
+    if not categories_file.exists():
+        return DEFAULT_CATEGORIES.copy()
+
+    try:
+        data = yaml.safe_load(categories_file.read_text(encoding="utf-8"))
+    except (OSError, yaml.YAMLError):
+        return DEFAULT_CATEGORIES.copy()
+
+    if isinstance(data, dict):
+        raw_categories = data.get("categories")
+    else:
+        raw_categories = data
+
+    if not isinstance(raw_categories, list):
+        return DEFAULT_CATEGORIES.copy()
+
+    categories = unique_preserving_order([str(item) for item in raw_categories])
+    return categories or DEFAULT_CATEGORIES.copy()
+
+
+def save_categories(base: Path, categories: list[str]) -> None:
+    categories_file = base / CATEGORIES_FILE
+    payload = {"categories": categories}
+    categories_file.write_text(
+        yaml.safe_dump(payload, sort_keys=False, allow_unicode=False),
+        encoding="utf-8",
+    )
 
 
 def put(stdscr: curses.window, y: int, x: int, text: str, attr: int = 0) -> None:
@@ -259,6 +304,156 @@ def build_review_lines(entries: list[dict[str, object]], activity: list[str] | N
     return lines
 
 
+def build_category_lines(categories: list[str], activity: list[str] | None = None) -> list[str]:
+    lines: list[str] = []
+    if categories:
+        lines.extend(f"{i + 1}. {category}" for i, category in enumerate(categories))
+    else:
+        lines.append("No categories configured.")
+
+    lines.append("")
+    lines.append(f"Total categories: {len(categories)}")
+    if activity:
+        lines.append("")
+        lines.append("Activity:")
+        lines.extend(activity[-4:])
+    return lines
+
+
+def manage_categories(stdscr: curses.window, categories: list[str]) -> bool:
+    activity: list[str] = []
+    idx = 0
+    changed = False
+
+    while True:
+        if categories:
+            idx = max(0, min(idx, len(categories) - 1))
+        else:
+            idx = 0
+
+        stdscr.clear()
+        h, w = stdscr.getmaxyx()
+
+        top_h = max(8, (h - 3) // 2)
+        bottom_top = top_h + 1
+        bottom_h = h - bottom_top - 1
+
+        draw_box(stdscr, 1, 2, top_h, max(20, w - 4), "Manage Categories", curses.color_pair(1))
+        draw_box(stdscr, bottom_top, 2, bottom_h, max(20, w - 4), "Current Order", curses.color_pair(1))
+
+        put(
+            stdscr,
+            3,
+            4,
+            "a add  e rename  d delete  u move up  n move down  Enter/q back",
+            curses.color_pair(3) | curses.A_BOLD,
+        )
+
+        start_y = 5
+        max_top_rows = top_h - 4
+        scroll_top = 0
+        if categories and max_top_rows > 0 and idx >= max_top_rows:
+            scroll_top = idx - max_top_rows + 1
+        visible_categories = categories[scroll_top : scroll_top + max_top_rows]
+        for i, category in enumerate(visible_categories):
+            row = start_y + i
+            current_index = scroll_top + i
+            attr = (curses.color_pair(2) | curses.A_BOLD) if current_index == idx else curses.A_NORMAL
+            prefix = " > " if current_index == idx else "   "
+            put(stdscr, row, 4, f"{prefix}{category}", attr)
+
+        review_lines = build_category_lines(categories, activity)
+        review_start_y = bottom_top + 2
+        max_bottom_rows = bottom_h - 3
+        for i, line in enumerate(review_lines):
+            if i >= max_bottom_rows:
+                break
+            put(stdscr, review_start_y + i, 4, line)
+
+        put(
+            stdscr,
+            h - 1,
+            3,
+            "Up/Down (or j/k): move cursor",
+            curses.color_pair(3) | curses.A_BOLD,
+        )
+        stdscr.refresh()
+
+        key = stdscr.getch()
+        if key in (ord("q"), 27, 10, 13, curses.KEY_ENTER):
+            return changed
+        if key in (curses.KEY_UP, ord("k")):
+            if categories:
+                idx = (idx - 1) % len(categories)
+            continue
+        if key in (curses.KEY_DOWN, ord("j")):
+            if categories:
+                idx = (idx + 1) % len(categories)
+            continue
+        if key == ord("a"):
+            raw = prompt_text(stdscr, "Add Category", "New category name:")
+            if raw is None:
+                continue
+            category = raw.strip()
+            if not category:
+                activity.append("Category name cannot be empty.")
+                continue
+            if category in categories:
+                activity.append(f"'{category}' already exists.")
+                continue
+            categories.append(category)
+            idx = len(categories) - 1
+            changed = True
+            activity.append(f"Added: {category}")
+            continue
+        if not categories:
+            activity.append("Add a category first.")
+            continue
+        if key == ord("e"):
+            current = categories[idx]
+            raw = prompt_text(stdscr, "Rename Category", "Category name:", current)
+            if raw is None:
+                continue
+            updated = raw.strip()
+            if not updated:
+                activity.append("Category name cannot be empty.")
+                continue
+            if updated != current and updated in categories:
+                activity.append(f"'{updated}' already exists.")
+                continue
+            categories[idx] = updated
+            changed = True
+            activity.append(f"Renamed: {current} -> {updated}")
+            continue
+        if key == ord("d"):
+            removed = categories.pop(idx)
+            changed = True
+            activity.append(f"Deleted: {removed}")
+            if not categories:
+                idx = 0
+            elif idx >= len(categories):
+                idx = len(categories) - 1
+            continue
+        if key == ord("u"):
+            if idx == 0:
+                activity.append("Already at the top.")
+                continue
+            categories[idx - 1], categories[idx] = categories[idx], categories[idx - 1]
+            idx -= 1
+            changed = True
+            activity.append(f"Moved up: {categories[idx]}")
+            continue
+        if key == ord("n"):
+            if idx == len(categories) - 1:
+                activity.append("Already at the bottom.")
+                continue
+            categories[idx + 1], categories[idx] = categories[idx], categories[idx + 1]
+            idx += 1
+            changed = True
+            activity.append(f"Moved down: {categories[idx]}")
+            continue
+
+
 def add_review_entries(
     stdscr: curses.window,
     categories: list[str],
@@ -457,19 +652,21 @@ def run_tui(
     stdscr: curses.window,
     initial_date: date,
     categories: list[str],
-) -> tuple[date, list[dict[str, object]], bool, str | None]:
+) -> tuple[date, list[dict[str, object]], bool, str | None, bool]:
     curses.curs_set(0)
     init_colors()
     entries: list[dict[str, object]] = []
     log_date = initial_date
     sessions_logged = 0
     off_day_reason: str | None = None
+    categories_changed = False
 
     while True:
         day_total = sum(int(item["duration_minutes"]) for item in entries)
         options = [
             f"Set log date ({log_date.strftime('%Y-%m-%d')})",
             f"Add/Review entries ({len(entries)})",
+            f"Manage categories ({len(categories)})",
             "Mark off day and save",
             "Save log and exit",
             "Exit without saving",
@@ -477,8 +674,8 @@ def run_tui(
         footer = f"Total today: {day_total}m ({hm(day_total)})"
         choice = menu(stdscr, "Daily Log TUI", options, footer)
 
-        if choice in (-1, 4):
-            return log_date, entries, False, None
+        if choice in (-1, 5):
+            return log_date, entries, False, None, categories_changed
 
         if choice == 0:
             log_date = choose_date(stdscr, log_date)
@@ -489,6 +686,10 @@ def run_tui(
             continue
 
         if choice == 2:
+            categories_changed = manage_categories(stdscr, categories) or categories_changed
+            continue
+
+        if choice == 3:
             reason = prompt_optional_text(
                 stdscr,
                 "Off Day",
@@ -497,13 +698,13 @@ def run_tui(
             )
             if reason is None:
                 continue
-            return log_date, [], True, reason or None
+            return log_date, [], True, reason or None, categories_changed
 
-        if choice == 3:
+        if choice == 4:
             if not entries:
                 show_message(stdscr, "Nothing to Save", ["Add at least one entry first."])
                 continue
-            return log_date, entries, True, off_day_reason
+            return log_date, entries, True, off_day_reason, categories_changed
 
 
 def main() -> int:
@@ -515,7 +716,14 @@ def main() -> int:
         return 1
 
     base = Path(__file__).resolve().parent
-    log_date, entries, should_save, off_day_reason = curses.wrapper(run_tui, cli_date, DEFAULT_CATEGORIES)
+    categories = load_categories(base)
+    log_date, entries, should_save, off_day_reason, categories_changed = curses.wrapper(
+        run_tui,
+        cli_date,
+        categories,
+    )
+    if categories_changed:
+        save_categories(base, categories)
     if not should_save:
         print("Exited without saving.")
         return 0
