@@ -33,6 +33,17 @@
 **Weekly progress:** 7h 30m / 31h 30m
 **Remaining this week:** 24h 00m
 
+### 2026-03-30 (Monday)
+
+- Book Hacking - The Art of Exploitation,: 0h 25m
+- General InfoSec: 0h 10m
+- Hackviser: 3h 45m
+- TryHackMe: 0h 10m
+
+**Today:** 4h 30m
+**Weekly progress:** 12h 00m / 31h 30m
+**Remaining this week:** 19h 30m
+
 
 ## 📅 Daily Summary
 --------------
@@ -40,6 +51,7 @@
 - **2026-03-27** -> 0h 45m
 - **2026-03-28** -> 2h 15m
 - **2026-03-29** -> 4h 30m
+- **2026-03-30** -> 4h 30m
 
 
 ## 📅 Weekly Progress
