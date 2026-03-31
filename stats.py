@@ -13,7 +13,10 @@ from typing import Any
 import yaml
 
 
-DEFAULT_DAILY_TARGET_MIN = 270
+DEFAULT_FULL_DAY_TARGET_MIN = 270
+DEFAULT_LIGHT_DAY_TARGET_MIN = 135
+DEFAULT_FULL_DAYS_PER_WEEK = 6
+WEEKS_PER_MONTH_TARGET = 4
 DEFAULT_WEEKLY_WINDOW = 7
 
 
@@ -261,12 +264,14 @@ def build_readme(
     weekly_window: int,
 ) -> str:
     lines: list[str] = []
+    four_week_target_min = weekly_target_min * WEEKS_PER_MONTH_TARGET
 
     # Daily timeline
     lines.append("## Daily Timeline")
     lines.append("***")
     lines.append("")
     lines.append(f"**Weekly target:** {hm(weekly_target_min)}")
+    lines.append(f"**4-week target:** {hm(four_week_target_min)}")
     lines.append("")
 
     weekly_done = 0
@@ -335,7 +340,6 @@ def build_readme(
         span_weeks = weekly_logs_to_show[-4:]
         studied_so_far = sum(item["total"] for item in span_weeks)
         off_days_in_span = sum(int(item.get("off_days", 0)) for item in span_weeks)
-        four_week_target_min = weekly_target_min * 4
         remaining = max(four_week_target_min - studied_so_far, 0)
         span_start = span_weeks[0]["start"]
         span_end = span_weeks[-1]["end"]
@@ -372,7 +376,9 @@ def build_readme(
         lines.append("")
         lines.append("### 🎯 4-Week Target Progress")
         lines.append(f"- **4-week target:** {hm(four_week_target_min)}")
-        lines.append(f"- **Studied so far ({len(span_weeks)} / 4 weeks):** **{hm(studied_so_far)}**")
+        lines.append(
+            f"- **Studied so far ({len(span_weeks)} / {WEEKS_PER_MONTH_TARGET} weeks):** **{hm(studied_so_far)}**"
+        )
         lines.append(f"- **Off days in {len(span_weeks)}-week span:** {off_days_in_span}")
         lines.append(f"- **Remaining to hit 4-week target:** **{hm(remaining)}**")
 
@@ -428,7 +434,24 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Generate Study-Logs README summary from YAML files.")
     parser.add_argument("--base", type=Path, default=script_base, help="Base directory containing Daily/Weekly/Monthly")
     parser.add_argument("--output", type=Path, default=None, help="Output README path (default: <base>/README.md)")
-    parser.add_argument("--daily-target", type=int, default=DEFAULT_DAILY_TARGET_MIN, help="Daily target in minutes")
+    parser.add_argument(
+        "--full-day-target",
+        type=int,
+        default=DEFAULT_FULL_DAY_TARGET_MIN,
+        help="Target minutes for a standard study day.",
+    )
+    parser.add_argument(
+        "--light-day-target",
+        type=int,
+        default=DEFAULT_LIGHT_DAY_TARGET_MIN,
+        help="Target minutes for the lighter day in the week.",
+    )
+    parser.add_argument(
+        "--full-days-per-week",
+        type=int,
+        default=DEFAULT_FULL_DAYS_PER_WEEK,
+        help="Number of standard target days in each 7-day week.",
+    )
     parser.add_argument("--weekly-window", type=int, default=DEFAULT_WEEKLY_WINDOW, help="Number of weekly logs to show from Weekly folder")
     parser.add_argument("--dry-run", action="store_true", help="Print generated markdown instead of writing file")
     return parser.parse_args()
@@ -443,7 +466,9 @@ def main() -> int:
     daily_dir = base / "Daily"
     monthly_dir = base / "Monthly"
 
-    weekly_target_min = args.daily_target * 7
+    full_days_per_week = min(max(args.full_days_per_week, 0), 7)
+    light_days_per_week = max(7 - full_days_per_week, 0)
+    weekly_target_min = (args.full_day_target * full_days_per_week) + (args.light_day_target * light_days_per_week)
 
     daily_logs = load_daily_logs(daily_dir)
     weekly_logs = load_weekly_logs(base, max_logs=max(args.weekly_window, 0))

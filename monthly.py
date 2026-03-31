@@ -11,7 +11,7 @@ from typing import Any
 import yaml
 
 
-DEFAULT_WEEKLY_GOAL_HOURS = 36
+DEFAULT_WEEKLY_GOAL_MINUTES = 1755
 WEEKS_PER_MONTH_LOG = 4
 
 
@@ -110,7 +110,7 @@ def iter_month_groups(weekly_logs: list[dict[str, Any]]) -> list[list[dict[str, 
     return groups
 
 
-def build_month_payload(group: list[dict[str, Any]], weekly_goal_hours: int) -> tuple[str, dict[str, Any]]:
+def build_month_payload(group: list[dict[str, Any]], weekly_goal_minutes: int) -> tuple[str, dict[str, Any]]:
     period_start = group[0]["start"]
     period_end = group[-1]["end"]
     month_label = period_end.strftime("%Y-%m")
@@ -125,8 +125,7 @@ def build_month_payload(group: list[dict[str, Any]], weekly_goal_hours: int) -> 
             category_totals[cat] += int(mins)
 
     sorted_categories = dict(sorted(category_totals.items(), key=lambda item: item[1], reverse=True))
-    four_week_goal_hours = weekly_goal_hours * WEEKS_PER_MONTH_LOG
-    four_week_goal_minutes = four_week_goal_hours * 60
+    four_week_goal_minutes = weekly_goal_minutes * WEEKS_PER_MONTH_LOG
     goal_completion_percent = round((overall_minutes / four_week_goal_minutes) * 100, 1) if four_week_goal_minutes else 0.0
 
     payload = {
@@ -136,8 +135,10 @@ def build_month_payload(group: list[dict[str, Any]], weekly_goal_hours: int) -> 
         "category_totals": sorted_categories,
         "overall_minutes": overall_minutes,
         "overall_hours": hm(overall_minutes),
-        "weekly_goal_hours": weekly_goal_hours,
-        "four_week_goal_hours": four_week_goal_hours,
+        "weekly_goal_minutes": weekly_goal_minutes,
+        "weekly_goal_display": hm(weekly_goal_minutes),
+        "four_week_goal_minutes": four_week_goal_minutes,
+        "four_week_goal_display": hm(four_week_goal_minutes),
         "goal_completion_percent": goal_completion_percent,
         "off_days": off_days,
         "created_at": datetime.now().astimezone().isoformat(timespec="seconds"),
@@ -153,10 +154,10 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--base", type=Path, default=script_base, help="Base folder containing Weekly/ and Monthly/")
     parser.add_argument("--overwrite", action="store_true", help="Overwrite existing monthly files")
     parser.add_argument(
-        "--weekly-goal-hours",
+        "--weekly-goal-minutes",
         type=int,
-        default=DEFAULT_WEEKLY_GOAL_HOURS,
-        help="Weekly target hours used to compute 4-week goal completion.",
+        default=DEFAULT_WEEKLY_GOAL_MINUTES,
+        help="Weekly target minutes used to compute 4-week goal completion.",
     )
     return parser.parse_args()
 
@@ -175,7 +176,7 @@ def main() -> int:
     skipped = 0
 
     for group in month_groups:
-        month_label, payload = build_month_payload(group, weekly_goal_hours=args.weekly_goal_hours)
+        month_label, payload = build_month_payload(group, weekly_goal_minutes=args.weekly_goal_minutes)
         out_file = monthly_dir / f"{month_label}.yaml"
         if out_file.exists() and not args.overwrite:
             skipped += 1

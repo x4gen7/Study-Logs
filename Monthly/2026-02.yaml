@@ -15,9 +15,11 @@ category_totals:
 overall_minutes: 3844
 overall_hours: "64h 04m"
 
-weekly_goal_hours: 36
-four_week_goal_hours: 144
-goal_completion_percent: 44.4
+weekly_goal_minutes: 1755
+weekly_goal_display: "29h 15m"
+four_week_goal_minutes: 7020
+four_week_goal_display: "117h 00m"
+goal_completion_percent: 54.8
 
 notes:
   - Week 1: light start

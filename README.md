@@ -1,7 +1,8 @@
 ## Daily Timeline
 ***
 
-**Weekly target:** 31h 30m
+**Weekly target:** 29h 15m
+**4-week target:** 117h 00m
 
 ### 2026-03-27 (Friday)
 
@@ -9,8 +10,8 @@
 - TryHackMe: 0h 38m
 
 **Today:** 0h 45m
-**Weekly progress:** 0h 45m / 31h 30m
-**Remaining this week:** 30h 45m
+**Weekly progress:** 0h 45m / 29h 15m
+**Remaining this week:** 28h 30m
 
 ### 2026-03-28 (Saturday)
 
@@ -19,8 +20,8 @@
 - TryHackMe: 1h 20m
 
 **Today:** 2h 15m
-**Weekly progress:** 3h 00m / 31h 30m
-**Remaining this week:** 28h 30m
+**Weekly progress:** 3h 00m / 29h 15m
+**Remaining this week:** 26h 15m
 
 ### 2026-03-29 (Sunday)
 
@@ -30,8 +31,8 @@
 - Hackviser: 0h 45m
 
 **Today:** 4h 30m
-**Weekly progress:** 7h 30m / 31h 30m
-**Remaining this week:** 24h 00m
+**Weekly progress:** 7h 30m / 29h 15m
+**Remaining this week:** 21h 45m
 
 ### 2026-03-30 (Monday)
 
@@ -41,8 +42,8 @@
 - TryHackMe: 0h 10m
 
 **Today:** 4h 30m
-**Weekly progress:** 12h 00m / 31h 30m
-**Remaining this week:** 19h 30m
+**Weekly progress:** 12h 00m / 29h 15m
+**Remaining this week:** 17h 15m
 
 
 ## 📅 Daily Summary

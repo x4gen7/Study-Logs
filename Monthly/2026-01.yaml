@@ -13,9 +13,11 @@ category_totals:
 overall_minutes: 5181
 overall_hours: "86h 21m"
 
-weekly_goal_hours: 36
-four_week_goal_hours: 144
-goal_completion_percent: 59.9
+weekly_goal_minutes: 1755
+weekly_goal_display: "29h 15m"
+four_week_goal_minutes: 7020
+four_week_goal_display: "117h 00m"
+goal_completion_percent: 73.8
 
 notes:
   - Week 1 (2026-01-02 → 2026-01-08): solid baseline
