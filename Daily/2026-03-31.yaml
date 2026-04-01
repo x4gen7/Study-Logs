@@ -1,0 +1,42 @@
+date: '2026-03-31'
+entries:
+- category: TryHackMe
+  duration_minutes: 22
+  duration_hours: 0h 22m
+- category: Hackviser
+  duration_minutes: 23
+  duration_hours: 0h 23m
+- category: Hackviser
+  duration_minutes: 28
+  duration_hours: 0h 28m
+- category: General InfoSec
+  duration_minutes: 17
+  duration_hours: 0h 17m
+- category: TCM-Security
+  duration_minutes: 45
+  duration_hours: 0h 45m
+- category: TryHackMe
+  duration_minutes: 45
+  duration_hours: 0h 45m
+- category: TryHackMe
+  duration_minutes: 13
+  duration_hours: 0h 13m
+- category: TCM-Security
+  duration_minutes: 5
+  duration_hours: 0h 05m
+- category: General InfoSec
+  duration_minutes: 27
+  duration_hours: 0h 27m
+- category: Hackviser
+  duration_minutes: 10
+  duration_hours: 0h 10m
+- category: General CS
+  duration_minutes: 25
+  duration_hours: 0h 25m
+- category: General CS
+  duration_minutes: 10
+  duration_hours: 0h 10m
+day_total_minutes: 270
+day_total_hours: 4h 30m
+created_at: '2026-04-01T03:46:12+03:00'
+status: study_day
