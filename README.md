@@ -4,10 +4,21 @@
 **Weekly target:** 27h 00m
 **4-week target:** 108h 00m
 
+### 2026-04-03 (Friday)
+
+- General InfoSec: 0h 45m
+- Hackviser: 0h 55m
+- TryHackMe: 0h 35m
+
+**Today:** 2h 15m
+**Weekly progress:** 2h 15m / 27h 00m
+**Remaining this week:** 24h 45m
+
 
 ## 📅 Daily Summary
 --------------
 
+- **2026-04-03** -> 2h 15m
 
 
 ## 📅 Weekly Progress
