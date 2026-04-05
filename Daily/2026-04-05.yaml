@@ -1,0 +1,33 @@
+date: '2026-04-05'
+entries:
+- category: Hackviser
+  duration_minutes: 45
+  duration_hours: 0h 45m
+- category: Hackviser
+  duration_minutes: 45
+  duration_hours: 0h 45m
+- category: Book Penetration Testing - A Hands-On Introduction to Hacking
+  duration_minutes: 20
+  duration_hours: 0h 20m
+- category: Hackviser
+  duration_minutes: 25
+  duration_hours: 0h 25m
+- category: Hackviser
+  duration_minutes: 45
+  duration_hours: 0h 45m
+- category: HackTheBox
+  duration_minutes: 45
+  duration_hours: 0h 45m
+- category: HackTheBox
+  duration_minutes: 15
+  duration_hours: 0h 15m
+- category: General InfoSec
+  duration_minutes: 16
+  duration_hours: 0h 16m
+- category: General CS
+  duration_minutes: 14
+  duration_hours: 0h 14m
+day_total_minutes: 270
+day_total_hours: 4h 30m
+created_at: '2026-04-06T02:37:27+03:00'
+status: study_day
