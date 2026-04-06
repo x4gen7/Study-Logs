@@ -21,7 +21,7 @@ entries:
 - category: HackTheBox
   duration_minutes: 15
   duration_hours: 0h 15m
-- category: General InfoSec
+- category: TCM-Security
   duration_minutes: 16
   duration_hours: 0h 16m
 - category: General CS

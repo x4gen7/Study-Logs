@@ -32,9 +32,9 @@
 
 - Book Penetration Testing - A Hands-On Introduction to Hacking: 0h 20m
 - General CS: 0h 14m
-- General InfoSec: 0h 16m
 - HackTheBox: 1h 00m
 - Hackviser: 2h 40m
+- TCM-Security: 0h 16m
 
 **Today:** 4h 30m
 **Weekly progress:** 11h 15m / 27h 00m
