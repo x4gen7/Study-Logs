@@ -1,8 +1,8 @@
 ## Daily Timeline
 ***
 
-**Weekly target:** 27h 00m
-**4-week target:** 108h 00m
+**Weekly target:** 24h 45m
+**4-week target:** 99h 00m
 
 ### 2026-04-03 (Friday)
 
@@ -11,8 +11,8 @@
 - TryHackMe: 0h 35m
 
 **Today:** 2h 15m
-**Weekly progress:** 2h 15m / 27h 00m
-**Remaining this week:** 24h 45m
+**Weekly progress:** 2h 15m / 24h 45m
+**Remaining this week:** 22h 30m
 
 ### 2026-04-04 (Saturday)
 
@@ -25,8 +25,8 @@
 - TryHackMe: 0h 10m
 
 **Today:** 4h 30m
-**Weekly progress:** 6h 45m / 27h 00m
-**Remaining this week:** 20h 15m
+**Weekly progress:** 6h 45m / 24h 45m
+**Remaining this week:** 18h 00m
 
 ### 2026-04-05 (Sunday)
 
@@ -37,8 +37,8 @@
 - TCM-Security: 0h 16m
 
 **Today:** 4h 30m
-**Weekly progress:** 11h 15m / 27h 00m
-**Remaining this week:** 15h 45m
+**Weekly progress:** 11h 15m / 24h 45m
+**Remaining this week:** 13h 30m
 
 ### 2026-04-06 (Monday)
 
@@ -48,8 +48,19 @@
 - Hackviser: 3h 16m
 
 **Today:** 4h 30m
-**Weekly progress:** 15h 45m / 27h 00m
-**Remaining this week:** 11h 15m
+**Weekly progress:** 15h 45m / 24h 45m
+**Remaining this week:** 9h 00m
+
+### 2026-04-07 (Tuesday)
+
+- CTF: 0h 42m
+- General InfoSec: 0h 03m
+- Hackviser: 0h 45m
+- TryHackMe: 0h 45m
+
+**Today:** 2h 15m
+**Weekly progress:** 18h 00m / 24h 45m
+**Remaining this week:** 6h 45m
 
 
 ## 📅 Daily Summary
@@ -59,6 +70,7 @@
 - **2026-04-04** -> 4h 30m
 - **2026-04-05** -> 4h 30m
 - **2026-04-06** -> 4h 30m
+- **2026-04-07** -> 2h 15m
 
 
 ## 📅 Weekly Progress
@@ -91,10 +103,10 @@
 ---
 
 ### 🎯 4-Week Target Progress
-- **4-week target:** 108h 00m
+- **4-week target:** 99h 00m
 - **Studied so far (1 / 4 weeks):** **23h 15m**
 - **Off days in 1-week span:** 0
-- **Remaining to hit 4-week target:** **84h 45m**
+- **Remaining to hit 4-week target:** **75h 45m**
 
 
 ## 📅 Monthly Progress

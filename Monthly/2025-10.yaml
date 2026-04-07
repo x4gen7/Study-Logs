@@ -12,10 +12,10 @@ category_totals:
   CTF : 380     # 6h 20m
 overall_minutes: 4522
 overall_hours: "75h 22m"
-weekly_goal_minutes: 1620
-weekly_goal_display: "27h 00m"
-four_week_goal_minutes: 6480
-four_week_goal_display: "108h 00m"
-goal_completion_percent: 69.8
+weekly_goal_minutes: 1485
+weekly_goal_display: "24h 45m"
+four_week_goal_minutes: 5940
+four_week_goal_display: "99h 00m"
+goal_completion_percent: 76.1
 
 created_at: 2025-11-15T17:00:00+03:00
