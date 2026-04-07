@@ -40,6 +40,17 @@
 **Weekly progress:** 11h 15m / 27h 00m
 **Remaining this week:** 15h 45m
 
+### 2026-04-06 (Monday)
+
+- Book Penetration Testing - A Hands-On Introduction to Hacking: 0h 20m
+- General InfoSec: 0h 09m
+- HackTheBox: 0h 45m
+- Hackviser: 3h 16m
+
+**Today:** 4h 30m
+**Weekly progress:** 15h 45m / 27h 00m
+**Remaining this week:** 11h 15m
+
 
 ## 📅 Daily Summary
 --------------
@@ -47,6 +58,7 @@
 - **2026-04-03** -> 2h 15m
 - **2026-04-04** -> 4h 30m
 - **2026-04-05** -> 4h 30m
+- **2026-04-06** -> 4h 30m
 
 
 ## 📅 Weekly Progress
