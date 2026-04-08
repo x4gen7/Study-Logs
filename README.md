@@ -62,6 +62,15 @@
 **Weekly progress:** 20h 15m / 27h 00m
 **Remaining this week:** 6h 45m
 
+### 2026-04-08 (Wednesday)
+
+- General InfoSec: 0h 54m
+- Hackviser: 1h 21m
+
+**Today:** 2h 15m
+**Weekly progress:** 22h 30m / 27h 00m
+**Remaining this week:** 4h 30m
+
 
 ## 📅 Daily Summary
 --------------
@@ -71,6 +80,7 @@
 - **2026-04-05** -> 4h 30m
 - **2026-04-06** -> 4h 30m
 - **2026-04-07** -> 4h 30m
+- **2026-04-08** -> 2h 15m
 
 
 ## 📅 Weekly Progress
