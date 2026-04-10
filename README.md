@@ -4,131 +4,47 @@
 **Weekly target:** 27h 00m
 **4-week target:** 108h 00m
 
-### 2026-04-03 (Friday)
-
-- General InfoSec: 0h 45m
-- Hackviser: 0h 55m
-- TryHackMe: 0h 35m
-
-**Today:** 2h 15m
-**Weekly progress:** 2h 15m / 27h 00m
-**Remaining this week:** 24h 45m
-
-### 2026-04-04 (Saturday)
-
-- Book Penetration Testing - A Hands-On Introduction to Hacking: 0h 25m
-- CTF: 1h 25m
-- General InfoSec: 0h 20m
-- HackTheBox: 0h 23m
-- Hackviser: 1h 02m
-- TCM-Security: 0h 45m
-- TryHackMe: 0h 10m
-
-**Today:** 4h 30m
-**Weekly progress:** 6h 45m / 27h 00m
-**Remaining this week:** 20h 15m
-
-### 2026-04-05 (Sunday)
-
-- Book Penetration Testing - A Hands-On Introduction to Hacking: 0h 20m
-- General CS: 0h 14m
-- HackTheBox: 1h 00m
-- Hackviser: 2h 40m
-- TCM-Security: 0h 16m
-
-**Today:** 4h 30m
-**Weekly progress:** 11h 15m / 27h 00m
-**Remaining this week:** 15h 45m
-
-### 2026-04-06 (Monday)
-
-- Book Penetration Testing - A Hands-On Introduction to Hacking: 0h 20m
-- General InfoSec: 0h 09m
-- HackTheBox: 0h 45m
-- Hackviser: 3h 16m
-
-**Today:** 4h 30m
-**Weekly progress:** 15h 45m / 27h 00m
-**Remaining this week:** 11h 15m
-
-### 2026-04-07 (Tuesday)
-
-- CTF: 0h 42m
-- General InfoSec: 1h 21m
-- Hackviser: 1h 42m
-- TryHackMe: 0h 45m
-
-**Today:** 4h 30m
-**Weekly progress:** 20h 15m / 27h 00m
-**Remaining this week:** 6h 45m
-
-### 2026-04-08 (Wednesday)
-
-- General InfoSec: 0h 54m
-- Hackviser: 1h 21m
-
-**Today:** 2h 15m
-**Weekly progress:** 22h 30m / 27h 00m
-**Remaining this week:** 4h 30m
-
-### 2026-04-09 (Thursday)
-
-- CTF: 0h 16m
-- General InfoSec: 1h 46m
-- HackTheBox: 1h 36m
-- Hackviser: 0h 52m
-
-**Today:** 4h 30m
-**Weekly progress:** 27h 00m / 27h 00m
-**Remaining this week:** 0h 00m
-
 
 ## 📅 Daily Summary
 --------------
 
-- **2026-04-03** -> 2h 15m
-- **2026-04-04** -> 4h 30m
-- **2026-04-05** -> 4h 30m
-- **2026-04-06** -> 4h 30m
-- **2026-04-07** -> 4h 30m
-- **2026-04-08** -> 2h 15m
-- **2026-04-09** -> 4h 30m
 
 
 ## 📅 Weekly Progress
 ---------------
 
 - **2026-03-27 -> 2026-04-02 (Week-1)** -> 23h 15m
+- **2026-04-03 -> 2026-04-09 (Week-2)** -> 27h 00m
 
 ## 📅 Weekly Study Summary
-**Weeks:** 2026-03-27 -> 2026-04-02 (Friday -> Thursday)
+**Weeks:** 2026-03-27 -> 2026-04-09 (Friday -> Thursday)
 
 ---
 
 ### ⏱ Total Study Time
-- **This span:** **23h 15m** (1395 minutes)
+- **This span:** **50h 15m** (3015 minutes)
 - **Off days:** 0
 
 ---
 
 ### 🧠 Category Breakdown
-- **Hackviser:** 7h 51m
-- **TryHackMe:** 3h 28m
-- **General InfoSec:** 3h 23m
-- **HackTheBox:** 2h 47m
-- **CTF:** 2h 36m
-- **General CS:** 1h 10m
+- **Hackviser:** 19h 39m
+- **General InfoSec:** 8h 38m
+- **HackTheBox:** 6h 31m
+- **CTF:** 4h 59m
+- **TryHackMe:** 4h 58m
+- **TCM-Security:** 1h 51m
+- **Book Penetration Testing - A Hands-On Introduction to Hacking:** 1h 25m
+- **General CS:** 1h 24m
 - **Book Hacking - The Art of Exploitation,:** 0h 50m
-- **TCM-Security:** 0h 50m
-- **Book Penetration Testing - A Hands-On Introduction to Hacking:** 0h 20m
 
 ---
 
 ### 🎯 4-Week Target Progress
 - **4-week target:** 108h 00m
-- **Studied so far (1 / 4 weeks):** **23h 15m**
-- **Off days in 1-week span:** 0
-- **Remaining to hit 4-week target:** **84h 45m**
+- **Studied so far (2 / 4 weeks):** **50h 15m**
+- **Off days in 2-week span:** 0
+- **Remaining to hit 4-week target:** **57h 45m**
 
 
 ## 📅 Monthly Progress
