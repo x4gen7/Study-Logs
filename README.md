@@ -4,7 +4,7 @@
 **Weekly target:** 27h 00m
 **4-week target:** 108h 00m
 
-### 2026-04-20 (Monday)
+### 2026-04-10 (Friday)
 
 - Book Penetration Testing - A Hands-On Introduction to Hacking: 0h 20m
 - CTF: 0h 23m
@@ -21,7 +21,7 @@
 ## 📅 Daily Summary
 --------------
 
-- **2026-04-20** -> 2h 15m
+- **2026-04-10** -> 2h 15m
 
 
 ## 📅 Weekly Progress
