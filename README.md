@@ -4,10 +4,24 @@
 **Weekly target:** 27h 00m
 **4-week target:** 108h 00m
 
+### 2026-04-20 (Monday)
+
+- Book Penetration Testing - A Hands-On Introduction to Hacking: 0h 20m
+- CTF: 0h 23m
+- General InfoSec: 0h 04m
+- HackTheBox: 0h 45m
+- Hackviser: 0h 41m
+- TryHackMe: 0h 02m
+
+**Today:** 2h 15m
+**Weekly progress:** 2h 15m / 27h 00m
+**Remaining this week:** 24h 45m
+
 
 ## 📅 Daily Summary
 --------------
 
+- **2026-04-20** -> 2h 15m
 
 
 ## 📅 Weekly Progress
