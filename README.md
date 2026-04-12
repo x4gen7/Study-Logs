@@ -17,11 +17,23 @@
 **Weekly progress:** 2h 15m / 27h 00m
 **Remaining this week:** 24h 45m
 
+### 2026-04-11 (Saturday)
+
+- General InfoSec: 0h 06m
+- Hackviser: 1h 38m
+- TCM-Security: 0h 11m
+- TryHackMe: 0h 20m
+
+**Today:** 2h 15m
+**Weekly progress:** 4h 30m / 27h 00m
+**Remaining this week:** 22h 30m
+
 
 ## 📅 Daily Summary
 --------------
 
 - **2026-04-10** -> 2h 15m
+- **2026-04-11** -> 2h 15m
 
 
 ## 📅 Weekly Progress
