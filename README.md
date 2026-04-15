@@ -60,6 +60,17 @@
 **Weekly progress:** 13h 30m / 27h 00m
 **Remaining this week:** 13h 30m
 
+### 2026-04-15 (Wednesday)
+
+- General InfoSec: 1h 05m
+- HackTheBox: 0h 58m
+- Hackviser: 1h 42m
+- TryHackMe: 0h 45m
+
+**Today:** 4h 30m
+**Weekly progress:** 18h 00m / 27h 00m
+**Remaining this week:** 9h 00m
+
 
 ## 📅 Daily Summary
 --------------
@@ -69,6 +80,7 @@
 - **2026-04-12** -> Off day (arrive from riyadh)
 - **2026-04-13** -> 4h 30m
 - **2026-04-14** -> 4h 30m
+- **2026-04-15** -> 4h 30m
 
 
 ## 📅 Weekly Progress
