@@ -28,6 +28,15 @@
 **Weekly progress:** 4h 30m / 27h 00m
 **Remaining this week:** 22h 30m
 
+### 2026-04-12 (Sunday)
+
+- Off day
+- Reason: arrive from riyadh
+
+**Today:** 0h 00m
+**Weekly progress:** 4h 30m / 27h 00m
+**Remaining this week:** 22h 30m
+
 ### 2026-04-13 (Monday)
 
 - CTF: 1h 53m
@@ -57,6 +66,7 @@
 
 - **2026-04-10** -> 2h 15m
 - **2026-04-11** -> 2h 15m
+- **2026-04-12** -> Off day (arrive from riyadh)
 - **2026-04-13** -> 4h 30m
 - **2026-04-14** -> 4h 30m
 
