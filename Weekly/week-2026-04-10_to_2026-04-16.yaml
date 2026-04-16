@@ -1,0 +1,15 @@
+week_start: '2026-04-10'
+week_end: '2026-04-16'
+category_totals:
+  Hackviser: 385
+  CTF: 267
+  General InfoSec: 219
+  HackTheBox: 196
+  TryHackMe: 92
+  Book Penetration Testing - A Hands-On Introduction to Hacking: 45
+  TCM-Security: 11
+overall_minutes: 1215
+overall_hours: 20h 15m
+days_present: 7
+off_days: 1
+created_at: '2026-04-16T23:03:14+03:00'
