@@ -1,0 +1,33 @@
+date: '2026-04-17'
+entries:
+- category: Hackviser
+  duration_minutes: 25
+  duration_hours: 0h 25m
+- category: TryHackMe
+  duration_minutes: 20
+  duration_hours: 0h 20m
+- category: Hackviser
+  duration_minutes: 9
+  duration_hours: 0h 09m
+- category: Book Penetration Testing - A Hands-On Introduction to Hacking
+  duration_minutes: 16
+  duration_hours: 0h 16m
+- category: General InfoSec
+  duration_minutes: 10
+  duration_hours: 0h 10m
+- category: Hackviser
+  duration_minutes: 10
+  duration_hours: 0h 10m
+- category: General InfoSec
+  duration_minutes: 25
+  duration_hours: 0h 25m
+- category: Hackviser
+  duration_minutes: 10
+  duration_hours: 0h 10m
+- category: CTF
+  duration_minutes: 10
+  duration_hours: 0h 10m
+day_total_minutes: 135
+day_total_hours: 2h 15m
+created_at: '2026-04-18T17:23:26+03:00'
+status: study_day
