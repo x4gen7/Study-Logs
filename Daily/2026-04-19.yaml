@@ -1,0 +1,54 @@
+date: '2026-04-19'
+entries:
+- category: CTF
+  duration_minutes: 20
+  duration_hours: 0h 20m
+- category: Hackviser
+  duration_minutes: 5
+  duration_hours: 0h 05m
+- category: Hackviser
+  duration_minutes: 20
+  duration_hours: 0h 20m
+- category: CTF
+  duration_minutes: 25
+  duration_hours: 0h 25m
+- category: CTF
+  duration_minutes: 18
+  duration_hours: 0h 18m
+- category: General InfoSec
+  duration_minutes: 2
+  duration_hours: 0h 02m
+- category: TryHackMe
+  duration_minutes: 25
+  duration_hours: 0h 25m
+- category: General InfoSec
+  duration_minutes: 20
+  duration_hours: 0h 20m
+- category: TryHackMe
+  duration_minutes: 5
+  duration_hours: 0h 05m
+- category: CTF
+  duration_minutes: 20
+  duration_hours: 0h 20m
+- category: CTF
+  duration_minutes: 20
+  duration_hours: 0h 20m
+- category: General InfoSec
+  duration_minutes: 25
+  duration_hours: 0h 25m
+- category: CTF
+  duration_minutes: 12
+  duration_hours: 0h 12m
+- category: General InfoSec
+  duration_minutes: 8
+  duration_hours: 0h 08m
+- category: HackTheBox
+  duration_minutes: 25
+  duration_hours: 0h 25m
+- category: General InfoSec
+  duration_minutes: 20
+  duration_hours: 0h 20m
+day_total_minutes: 270
+day_total_hours: 4h 30m
+created_at: '2026-04-20T02:47:21+03:00'
+status: study_day
