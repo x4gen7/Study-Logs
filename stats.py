@@ -13,9 +13,7 @@ from typing import Any
 import yaml
 
 
-DEFAULT_FULL_DAY_TARGET_MIN = 270
-DEFAULT_LIGHT_DAY_TARGET_MIN = 135
-DEFAULT_FULL_DAYS_PER_WEEK = 5
+DEFAULT_WEEKLY_TARGET_MIN = 1500
 WEEKS_PER_MONTH_TARGET = 4
 DEFAULT_WEEKLY_WINDOW = 7
 
@@ -434,24 +432,7 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Generate Study-Logs README summary from YAML files.")
     parser.add_argument("--base", type=Path, default=script_base, help="Base directory containing Daily/Weekly/Monthly")
     parser.add_argument("--output", type=Path, default=None, help="Output README path (default: <base>/README.md)")
-    parser.add_argument(
-        "--full-day-target",
-        type=int,
-        default=DEFAULT_FULL_DAY_TARGET_MIN,
-        help="Target minutes for a standard study day.",
-    )
-    parser.add_argument(
-        "--light-day-target",
-        type=int,
-        default=DEFAULT_LIGHT_DAY_TARGET_MIN,
-        help="Target minutes for the lighter day in the week.",
-    )
-    parser.add_argument(
-        "--full-days-per-week",
-        type=int,
-        default=DEFAULT_FULL_DAYS_PER_WEEK,
-        help="Number of standard target days in each 7-day week.",
-    )
+    parser.add_argument("--weekly-target", type=int, default=DEFAULT_WEEKLY_TARGET_MIN, help="Weekly target in minutes")
     parser.add_argument("--weekly-window", type=int, default=DEFAULT_WEEKLY_WINDOW, help="Number of weekly logs to show from Weekly folder")
     parser.add_argument("--dry-run", action="store_true", help="Print generated markdown instead of writing file")
     return parser.parse_args()
@@ -466,9 +447,7 @@ def main() -> int:
     daily_dir = base / "Daily"
     monthly_dir = base / "Monthly"
 
-    full_days_per_week = min(max(args.full_days_per_week, 0), 7)
-    light_days_per_week = max(7 - full_days_per_week, 0)
-    weekly_target_min = (args.full_day_target * full_days_per_week) + (args.light_day_target * light_days_per_week)
+    weekly_target_min = max(args.weekly_target, 0)
 
     daily_logs = load_daily_logs(daily_dir)
     weekly_logs = load_weekly_logs(base, max_logs=max(args.weekly_window, 0))

@@ -1,8 +1,8 @@
 ## Daily Timeline
 ***
 
-**Weekly target:** 27h 00m
-**4-week target:** 108h 00m
+**Weekly target:** 25h 00m
+**4-week target:** 100h 00m
 
 ### 2026-04-17 (Friday)
 
@@ -13,8 +13,8 @@
 - TryHackMe: 0h 20m
 
 **Today:** 2h 15m
-**Weekly progress:** 2h 15m / 27h 00m
-**Remaining this week:** 24h 45m
+**Weekly progress:** 2h 15m / 25h 00m
+**Remaining this week:** 22h 45m
 
 ### 2026-04-18 (Saturday)
 
@@ -24,8 +24,8 @@
 - TryHackMe: 0h 18m
 
 **Today:** 2h 15m
-**Weekly progress:** 4h 30m / 27h 00m
-**Remaining this week:** 22h 30m
+**Weekly progress:** 4h 30m / 25h 00m
+**Remaining this week:** 20h 30m
 
 ### 2026-04-19 (Sunday)
 
@@ -36,8 +36,8 @@
 - TryHackMe: 0h 30m
 
 **Today:** 4h 30m
-**Weekly progress:** 9h 00m / 27h 00m
-**Remaining this week:** 18h 00m
+**Weekly progress:** 9h 00m / 25h 00m
+**Remaining this week:** 16h 00m
 
 
 ## 📅 Daily Summary
@@ -80,10 +80,10 @@
 ---
 
 ### 🎯 4-Week Target Progress
-- **4-week target:** 108h 00m
+- **4-week target:** 100h 00m
 - **Studied so far (3 / 4 weeks):** **70h 30m**
 - **Off days in 3-week span:** 1
-- **Remaining to hit 4-week target:** **37h 30m**
+- **Remaining to hit 4-week target:** **29h 30m**
 
 
 ## 📅 Monthly Progress
