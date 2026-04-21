@@ -1,0 +1,18 @@
+date: '2026-04-20'
+entries:
+- category: CTF
+  duration_minutes: 25
+  duration_hours: 0h 25m
+- category: CTF
+  duration_minutes: 25
+  duration_hours: 0h 25m
+- category: General InfoSec
+  duration_minutes: 15
+  duration_hours: 0h 15m
+- category: CTF
+  duration_minutes: 5
+  duration_hours: 0h 05m
+day_total_minutes: 70
+day_total_hours: 1h 10m
+created_at: '2026-04-21T12:08:57+03:00'
+status: study_day
