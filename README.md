@@ -4,99 +4,21 @@
 **Weekly target:** 25h 00m
 **4-week target:** 100h 00m
 
-### 2026-04-17 (Friday)
+### 2026-04-24 (Friday)
 
-- Book Penetration Testing - A Hands-On Introduction to Hacking: 0h 16m
-- CTF: 0h 10m
-- General InfoSec: 0h 35m
-- Hackviser: 0h 54m
-- TryHackMe: 0h 20m
+- CTF: 0h 50m
+- General InfoSec: 0h 15m
+- book The Web Application Hackers Handbook: 1h 10m
 
 **Today:** 2h 15m
 **Weekly progress:** 2h 15m / 25h 00m
 **Remaining this week:** 22h 45m
 
-### 2026-04-18 (Saturday)
-
-- CTF: 1h 17m
-- General InfoSec: 0h 20m
-- HackTheBox: 0h 20m
-- TryHackMe: 0h 18m
-
-**Today:** 2h 15m
-**Weekly progress:** 4h 30m / 25h 00m
-**Remaining this week:** 20h 30m
-
-### 2026-04-19 (Sunday)
-
-- CTF: 1h 55m
-- General InfoSec: 1h 15m
-- HackTheBox: 0h 25m
-- Hackviser: 0h 25m
-- TryHackMe: 0h 30m
-
-**Today:** 4h 30m
-**Weekly progress:** 9h 00m / 25h 00m
-**Remaining this week:** 16h 00m
-
-### 2026-04-20 (Monday)
-
-- CTF: 1h 00m
-- General InfoSec: 0h 15m
-- TCM-Security: 0h 20m
-- TryHackMe: 0h 20m
-
-**Today:** 1h 55m
-**Weekly progress:** 10h 55m / 25h 00m
-**Remaining this week:** 14h 05m
-
-### 2026-04-21 (Tuesday)
-
-- CTF: 3h 05m
-- General InfoSec: 0h 14m
-- HackTheBox: 0h 11m
-- Hackviser: 0h 45m
-- TryHackMe: 0h 15m
-
-**Today:** 4h 30m
-**Weekly progress:** 15h 25m / 25h 00m
-**Remaining this week:** 9h 35m
-
-### 2026-04-22 (Wednesday)
-
-- CTF: 0h 22m
-- General InfoSec: 0h 31m
-- Hackviser: 2h 34m
-- TCM-Security: 0h 38m
-- TryHackMe: 0h 25m
-
-**Today:** 4h 30m
-**Weekly progress:** 19h 55m / 25h 00m
-**Remaining this week:** 5h 05m
-
-### 2026-04-23 (Thursday)
-
-- Book The Hacker Playbook 3: 0h 20m
-- CTF: 0h 45m
-- General InfoSec: 0h 40m
-- HackTheBox: 1h 10m
-- Hackviser: 1h 35m
-
-**Today:** 4h 30m
-**Weekly progress:** 24h 25m / 25h 00m
-**Remaining this week:** 0h 35m
-
 
 ## 📅 Daily Summary
 --------------
 
-- **2026-04-17** -> 2h 15m
-- **2026-04-18** -> 2h 15m
-- **2026-04-19** -> 4h 30m
-- **2026-04-20** -> 1h 55m
-- **2026-04-21** -> 4h 30m
-- **2026-04-22** -> 4h 30m
-- **2026-04-23** -> 4h 30m
+- **2026-04-24** -> 2h 15m
 
 
 ## 📅 Weekly Progress
