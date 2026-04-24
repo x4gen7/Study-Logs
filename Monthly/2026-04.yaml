@@ -1,0 +1,23 @@
+period_start: '2026-03-27'
+period_end: '2026-04-23'
+weeks_count: 4
+category_totals:
+  Hackviser: 1937
+  CTF: 1080
+  General InfoSec: 967
+  HackTheBox: 713
+  TryHackMe: 518
+  TCM-Security: 180
+  Book Penetration Testing - A Hands-On Introduction to Hacking: 146
+  General CS: 84
+  Book Hacking - The Art of Exploitation,: 50
+  Book The Hacker Playbook 3: 20
+overall_minutes: 5695
+overall_hours: 94h 55m
+weekly_goal_minutes: 1500
+weekly_goal_display: 25h 00m
+four_week_goal_minutes: 6000
+four_week_goal_display: 100h 00m
+goal_completion_percent: 94.9
+off_days: 1
+created_at: '2026-04-24T03:20:44+03:00'
