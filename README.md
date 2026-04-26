@@ -14,11 +14,23 @@
 **Weekly progress:** 2h 15m / 25h 00m
 **Remaining this week:** 22h 45m
 
+### 2026-04-25 (Saturday)
+
+- CTF: 0h 10m
+- General InfoSec: 0h 05m
+- Hackviser: 0h 45m
+- book The Web Application Hackers Handbook: 1h 15m
+
+**Today:** 2h 15m
+**Weekly progress:** 4h 30m / 25h 00m
+**Remaining this week:** 20h 30m
+
 
 ## 📅 Daily Summary
 --------------
 
 - **2026-04-24** -> 2h 15m
+- **2026-04-25** -> 2h 15m
 
 
 ## 📅 Weekly Progress
