@@ -1,0 +1,15 @@
+date: '2026-04-28'
+entries:
+- category: Hackviser
+  duration_minutes: 45
+  duration_hours: 0h 45m
+- category: Hackviser
+  duration_minutes: 25
+  duration_hours: 0h 25m
+- category: Hackviser
+  duration_minutes: 5
+  duration_hours: 0h 05m
+day_total_minutes: 75
+day_total_hours: 1h 15m
+created_at: '2026-04-29T12:31:18+03:00'
+status: study_day

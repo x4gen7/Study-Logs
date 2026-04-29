@@ -35,6 +35,23 @@
 **Weekly progress:** 6h 45m / 25h 00m
 **Remaining this week:** 18h 15m
 
+### 2026-04-27 (Monday)
+
+- Off day
+- Reason: umrah
+
+**Today:** 0h 00m
+**Weekly progress:** 6h 45m / 25h 00m
+**Remaining this week:** 18h 15m
+
+### 2026-04-28 (Tuesday)
+
+- Hackviser: 1h 15m
+
+**Today:** 1h 15m
+**Weekly progress:** 8h 00m / 25h 00m
+**Remaining this week:** 17h 00m
+
 
 ## 📅 Daily Summary
 --------------
@@ -42,6 +59,8 @@
 - **2026-04-24** -> 2h 15m
 - **2026-04-25** -> 2h 15m
 - **2026-04-26** -> 2h 15m
+- **2026-04-27** -> Off day (umrah)
+- **2026-04-28** -> 1h 15m
 
 
 ## 📅 Weekly Progress
