@@ -1,0 +1,13 @@
+week_start: '2026-04-24'
+week_end: '2026-04-30'
+category_totals:
+  Hackviser: 224
+  book The Web Application Hackers Handbook: 171
+  CTF: 163
+  General InfoSec: 30
+  TryHackMe: 27
+overall_minutes: 615
+overall_hours: 10h 15m
+days_present: 7
+off_days: 2
+created_at: '2026-05-01T04:47:06+03:00'

@@ -52,6 +52,27 @@
 **Weekly progress:** 8h 00m / 25h 00m
 **Remaining this week:** 17h 00m
 
+### 2026-04-29 (Wednesday)
+
+- Off day
+- Reason: comming from Makkah
+
+**Today:** 0h 00m
+**Weekly progress:** 8h 00m / 25h 00m
+**Remaining this week:** 17h 00m
+
+### 2026-04-30 (Thursday)
+
+- CTF: 0h 58m
+- General InfoSec: 0h 05m
+- Hackviser: 0h 19m
+- TryHackMe: 0h 27m
+- book The Web Application Hackers Handbook: 0h 26m
+
+**Today:** 2h 15m
+**Weekly progress:** 10h 15m / 25h 00m
+**Remaining this week:** 14h 45m
+
 
 ## 📅 Daily Summary
 --------------
@@ -61,11 +82,40 @@
 - **2026-04-26** -> 2h 15m
 - **2026-04-27** -> Off day (umrah)
 - **2026-04-28** -> 1h 15m
+- **2026-04-29** -> Off day (comming from Makkah)
+- **2026-04-30** -> 2h 15m
 
 
 ## 📅 Weekly Progress
 ---------------
 
+- **2026-04-24 -> 2026-04-30 (Week-1)** -> 10h 15m | Off days: 2
+
+## 📅 Weekly Study Summary
+**Weeks:** 2026-04-24 -> 2026-04-30 (Friday -> Thursday)
+
+---
+
+### ⏱ Total Study Time
+- **This span:** **10h 15m** (615 minutes)
+- **Off days:** 2
+
+---
+
+### 🧠 Category Breakdown
+- **Hackviser:** 3h 44m
+- **book The Web Application Hackers Handbook:** 2h 51m
+- **CTF:** 2h 43m
+- **General InfoSec:** 0h 30m
+- **TryHackMe:** 0h 27m
+
+---
+
+### 🎯 4-Week Target Progress
+- **4-week target:** 100h 00m
+- **Studied so far (1 / 4 weeks):** **10h 15m**
+- **Off days in 1-week span:** 2
+- **Remaining to hit 4-week target:** **89h 45m**
 
 
 ## 📅 Monthly Progress
