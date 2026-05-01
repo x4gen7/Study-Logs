@@ -4,86 +4,10 @@
 **Weekly target:** 25h 00m
 **4-week target:** 100h 00m
 
-### 2026-04-24 (Friday)
-
-- CTF: 0h 50m
-- General InfoSec: 0h 15m
-- book The Web Application Hackers Handbook: 1h 10m
-
-**Today:** 2h 15m
-**Weekly progress:** 2h 15m / 25h 00m
-**Remaining this week:** 22h 45m
-
-### 2026-04-25 (Saturday)
-
-- CTF: 0h 10m
-- General InfoSec: 0h 05m
-- Hackviser: 0h 45m
-- book The Web Application Hackers Handbook: 1h 15m
-
-**Today:** 2h 15m
-**Weekly progress:** 4h 30m / 25h 00m
-**Remaining this week:** 20h 30m
-
-### 2026-04-26 (Sunday)
-
-- CTF: 0h 45m
-- General InfoSec: 0h 05m
-- Hackviser: 1h 25m
-
-**Today:** 2h 15m
-**Weekly progress:** 6h 45m / 25h 00m
-**Remaining this week:** 18h 15m
-
-### 2026-04-27 (Monday)
-
-- Off day
-- Reason: umrah
-
-**Today:** 0h 00m
-**Weekly progress:** 6h 45m / 25h 00m
-**Remaining this week:** 18h 15m
-
-### 2026-04-28 (Tuesday)
-
-- Hackviser: 1h 15m
-
-**Today:** 1h 15m
-**Weekly progress:** 8h 00m / 25h 00m
-**Remaining this week:** 17h 00m
-
-### 2026-04-29 (Wednesday)
-
-- Off day
-- Reason: comming from Makkah
-
-**Today:** 0h 00m
-**Weekly progress:** 8h 00m / 25h 00m
-**Remaining this week:** 17h 00m
-
-### 2026-04-30 (Thursday)
-
-- CTF: 0h 58m
-- General InfoSec: 0h 05m
-- Hackviser: 0h 19m
-- TryHackMe: 0h 27m
-- book The Web Application Hackers Handbook: 0h 26m
-
-**Today:** 2h 15m
-**Weekly progress:** 10h 15m / 25h 00m
-**Remaining this week:** 14h 45m
-
 
 ## 📅 Daily Summary
 --------------
 
-- **2026-04-24** -> 2h 15m
-- **2026-04-25** -> 2h 15m
-- **2026-04-26** -> 2h 15m
-- **2026-04-27** -> Off day (umrah)
-- **2026-04-28** -> 1h 15m
-- **2026-04-29** -> Off day (comming from Makkah)
-- **2026-04-30** -> 2h 15m
 
 
 ## 📅 Weekly Progress
