@@ -4,10 +4,22 @@
 **Weekly target:** 25h 00m
 **4-week target:** 100h 00m
 
+### 2026-05-01 (Friday)
+
+- General InfoSec: 0h 16m
+- HackTheBox: 0h 45m
+- TryHackMe: 0h 50m
+- book The Web Application Hackers Handbook: 0h 24m
+
+**Today:** 2h 15m
+**Weekly progress:** 2h 15m / 25h 00m
+**Remaining this week:** 22h 45m
+
 
 ## 📅 Daily Summary
 --------------
 
+- **2026-05-01** -> 2h 15m
 
 
 ## 📅 Weekly Progress
