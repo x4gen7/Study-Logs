@@ -15,11 +15,22 @@
 **Weekly progress:** 2h 15m / 25h 00m
 **Remaining this week:** 22h 45m
 
+### 2026-05-02 (Saturday)
+
+- CTF: 1h 35m
+- TCM-Security: 0h 20m
+- book The Web Application Hackers Handbook: 0h 20m
+
+**Today:** 2h 15m
+**Weekly progress:** 4h 30m / 25h 00m
+**Remaining this week:** 20h 30m
+
 
 ## 📅 Daily Summary
 --------------
 
 - **2026-05-01** -> 2h 15m
+- **2026-05-02** -> 2h 15m
 
 
 ## 📅 Weekly Progress
