@@ -35,6 +35,18 @@
 **Weekly progress:** 6h 45m / 25h 00m
 **Remaining this week:** 18h 15m
 
+### 2026-05-04 (Monday)
+
+- CTF: 1h 27m
+- General InfoSec: 0h 18m
+- HackTheBox: 2h 22m
+- TCM-Security: 0h 14m
+- book The Web Application Hackers Handbook: 0h 09m
+
+**Today:** 4h 30m
+**Weekly progress:** 11h 15m / 25h 00m
+**Remaining this week:** 13h 45m
+
 
 ## 📅 Daily Summary
 --------------
@@ -42,6 +54,7 @@
 - **2026-05-01** -> 2h 15m
 - **2026-05-02** -> 2h 15m
 - **2026-05-03** -> 2h 15m
+- **2026-05-04** -> 4h 30m
 
 
 ## 📅 Weekly Progress
