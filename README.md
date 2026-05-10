@@ -23,12 +23,24 @@
 **Weekly progress:** 4h 30m / 25h 00m
 **Remaining this week:** 20h 30m
 
+### 2026-05-10 (Sunday)
+
+- Book the linux Command line: 0h 45m
+- CTF: 2h 29m
+- General InfoSec: 0h 31m
+- HackTheBox: 0h 45m
+
+**Today:** 4h 30m
+**Weekly progress:** 9h 00m / 25h 00m
+**Remaining this week:** 16h 00m
+
 
 ## 📅 Daily Summary
 --------------
 
 - **2026-05-08** -> 2h 15m
 - **2026-05-09** -> 2h 15m
+- **2026-05-10** -> 4h 30m
 
 
 ## 📅 Weekly Progress

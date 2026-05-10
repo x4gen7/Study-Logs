@@ -1,0 +1,42 @@
+date: '2026-05-10'
+entries:
+- category: CTF
+  duration_minutes: 45
+  duration_hours: 0h 45m
+- category: CTF
+  duration_minutes: 7
+  duration_hours: 0h 07m
+- category: General InfoSec
+  duration_minutes: 18
+  duration_hours: 0h 18m
+- category: CTF
+  duration_minutes: 20
+  duration_hours: 0h 20m
+- category: HackTheBox
+  duration_minutes: 45
+  duration_hours: 0h 45m
+- category: Book the linux Command line
+  duration_minutes: 45
+  duration_hours: 0h 45m
+- category: CTF
+  duration_minutes: 25
+  duration_hours: 0h 25m
+- category: CTF
+  duration_minutes: 13
+  duration_hours: 0h 13m
+- category: General InfoSec
+  duration_minutes: 7
+  duration_hours: 0h 07m
+- category: General InfoSec
+  duration_minutes: 6
+  duration_hours: 0h 06m
+- category: CTF
+  duration_minutes: 19
+  duration_hours: 0h 19m
+- category: CTF
+  duration_minutes: 20
+  duration_hours: 0h 20m
+day_total_minutes: 270
+day_total_hours: 4h 30m
+created_at: '2026-05-11T00:10:10+03:00'
+status: study_day
