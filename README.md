@@ -66,6 +66,15 @@
 **Weekly progress:** 22h 30m / 25h 00m
 **Remaining this week:** 2h 30m
 
+### 2026-05-14 (Thursday)
+
+- CTF: 0h 43m
+- General InfoSec: 1h 32m
+
+**Today:** 2h 15m
+**Weekly progress:** 24h 45m / 25h 00m
+**Remaining this week:** 0h 15m
+
 
 ## 📅 Daily Summary
 --------------
@@ -76,6 +85,7 @@
 - **2026-05-11** -> 4h 30m
 - **2026-05-12** -> 4h 30m
 - **2026-05-13** -> 4h 30m
+- **2026-05-14** -> 2h 15m
 
 
 ## 📅 Weekly Progress
@@ -83,34 +93,36 @@
 
 - **2026-04-24 -> 2026-04-30 (Week-1)** -> 10h 15m | Off days: 2
 - **2026-05-01 -> 2026-05-07 (Week-2)** -> 22h 30m | Off days: 1
+- **2026-05-08 -> 2026-05-14 (Week-3)** -> 24h 45m
 
 ## 📅 Weekly Study Summary
-**Weeks:** 2026-04-24 -> 2026-05-07 (Friday -> Thursday)
+**Weeks:** 2026-04-24 -> 2026-05-14 (Friday -> Thursday)
 
 ---
 
 ### ⏱ Total Study Time
-- **This span:** **32h 45m** (1965 minutes)
+- **This span:** **57h 30m** (3450 minutes)
 - **Off days:** 3
 
 ---
 
 ### 🧠 Category Breakdown
-- **HackTheBox:** 8h 10m
-- **CTF:** 7h 11m
-- **TryHackMe:** 5h 28m
+- **CTF:** 17h 27m
+- **HackTheBox:** 14h 04m
+- **General InfoSec:** 10h 34m
+- **TryHackMe:** 6h 19m
 - **book The Web Application Hackers Handbook:** 3h 53m
 - **Hackviser:** 3h 44m
-- **General InfoSec:** 3h 35m
+- **Book the linux Command line:** 0h 45m
 - **TCM-Security:** 0h 44m
 
 ---
 
 ### 🎯 4-Week Target Progress
 - **4-week target:** 100h 00m
-- **Studied so far (2 / 4 weeks):** **32h 45m**
-- **Off days in 2-week span:** 3
-- **Remaining to hit 4-week target:** **67h 15m**
+- **Studied so far (3 / 4 weeks):** **57h 30m**
+- **Off days in 3-week span:** 3
+- **Remaining to hit 4-week target:** **42h 30m**
 
 
 ## 📅 Monthly Progress
