@@ -1,0 +1,33 @@
+date: '2026-05-16'
+entries:
+- category: General InfoSec
+  duration_minutes: 13
+  duration_hours: 0h 13m
+- category: HackTheBox
+  duration_minutes: 12
+  duration_hours: 0h 12m
+- category: General InfoSec
+  duration_minutes: 13
+  duration_hours: 0h 13m
+- category: HackTheBox
+  duration_minutes: 7
+  duration_hours: 0h 07m
+- category: HackTheBox
+  duration_minutes: 36
+  duration_hours: 0h 36m
+- category: General InfoSec
+  duration_minutes: 9
+  duration_hours: 0h 09m
+- category: CTF
+  duration_minutes: 37
+  duration_hours: 0h 37m
+- category: HackTheBox
+  duration_minutes: 6
+  duration_hours: 0h 06m
+- category: General InfoSec
+  duration_minutes: 2
+  duration_hours: 0h 02m
+day_total_minutes: 135
+day_total_hours: 2h 15m
+created_at: '2026-05-17T03:28:03+03:00'
+status: study_day
