@@ -1,0 +1,12 @@
+week_start: '2026-05-15'
+week_end: '2026-05-21'
+category_totals:
+  General InfoSec: 495
+  CTF: 233
+  HackTheBox: 164
+  TryHackMe: 68
+overall_minutes: 960
+overall_hours: 16h 00m
+days_present: 7
+off_days: 0
+created_at: '2026-05-21T23:38:36+03:00'
