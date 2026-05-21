@@ -54,6 +54,15 @@
 **Weekly progress:** 11h 10m / 25h 00m
 **Remaining this week:** 13h 50m
 
+### 2026-05-20 (Wednesday)
+
+- CTF: 0h 15m
+- General InfoSec: 2h 20m
+
+**Today:** 2h 35m
+**Weekly progress:** 13h 45m / 25h 00m
+**Remaining this week:** 11h 15m
+
 
 ## 📅 Daily Summary
 --------------
@@ -63,6 +72,7 @@
 - **2026-05-17** -> 0h 20m
 - **2026-05-18** -> 2h 15m
 - **2026-05-19** -> 4h 30m
+- **2026-05-20** -> 2h 35m
 
 
 ## 📅 Weekly Progress
