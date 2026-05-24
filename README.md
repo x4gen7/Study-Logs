@@ -14,11 +14,23 @@
 **Weekly progress:** 2h 15m / 25h 00m
 **Remaining this week:** 22h 45m
 
+### 2026-05-23 (Saturday)
+
+- CTF: 0h 40m
+- General InfoSec: 0h 48m
+- TCM-Security: 0h 25m
+- TryHackMe: 0h 22m
+
+**Today:** 2h 15m
+**Weekly progress:** 4h 30m / 25h 00m
+**Remaining this week:** 20h 30m
+
 
 ## 📅 Daily Summary
 --------------
 
 - **2026-05-22** -> 2h 15m
+- **2026-05-23** -> 2h 15m
 
 
 ## 📅 Weekly Progress
