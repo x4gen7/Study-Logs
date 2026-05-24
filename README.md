@@ -25,12 +25,24 @@
 **Weekly progress:** 4h 30m / 25h 00m
 **Remaining this week:** 20h 30m
 
+### 2026-05-24 (Sunday)
+
+- General InfoSec: 0h 31m
+- HackTheBox: 0h 27m
+- TCM-Security: 0h 22m
+- TryHackMe: 0h 55m
+
+**Today:** 2h 15m
+**Weekly progress:** 6h 45m / 25h 00m
+**Remaining this week:** 18h 15m
+
 
 ## 📅 Daily Summary
 --------------
 
 - **2026-05-22** -> 2h 15m
 - **2026-05-23** -> 2h 15m
+- **2026-05-24** -> 2h 15m
 
 
 ## 📅 Weekly Progress

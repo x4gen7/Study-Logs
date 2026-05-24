@@ -1,0 +1,27 @@
+date: '2026-05-24'
+entries:
+- category: TryHackMe
+  duration_minutes: 45
+  duration_hours: 0h 45m
+- category: TryHackMe
+  duration_minutes: 10
+  duration_hours: 0h 10m
+- category: General InfoSec
+  duration_minutes: 5
+  duration_hours: 0h 05m
+- category: TCM-Security
+  duration_minutes: 22
+  duration_hours: 0h 22m
+- category: HackTheBox
+  duration_minutes: 8
+  duration_hours: 0h 08m
+- category: General InfoSec
+  duration_minutes: 26
+  duration_hours: 0h 26m
+- category: HackTheBox
+  duration_minutes: 19
+  duration_hours: 0h 19m
+day_total_minutes: 135
+day_total_hours: 2h 15m
+created_at: '2026-05-25T01:55:33+03:00'
+status: study_day
