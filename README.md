@@ -36,6 +36,15 @@
 **Weekly progress:** 6h 45m / 25h 00m
 **Remaining this week:** 18h 15m
 
+### 2026-05-25 (Monday)
+
+- General InfoSec: 1h 07m
+- HackTheBox: 0h 23m
+
+**Today:** 1h 30m
+**Weekly progress:** 8h 15m / 25h 00m
+**Remaining this week:** 16h 45m
+
 
 ## 📅 Daily Summary
 --------------
@@ -43,6 +52,7 @@
 - **2026-05-22** -> 2h 15m
 - **2026-05-23** -> 2h 15m
 - **2026-05-24** -> 2h 15m
+- **2026-05-25** -> 1h 30m
 
 
 ## 📅 Weekly Progress
