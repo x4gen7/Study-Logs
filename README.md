@@ -45,6 +45,24 @@
 **Weekly progress:** 8h 15m / 25h 00m
 **Remaining this week:** 16h 45m
 
+### 2026-05-26 (Tuesday)
+
+- CTF: 0h 07m
+- General InfoSec: 0h 18m
+
+**Today:** 0h 25m
+**Weekly progress:** 8h 40m / 25h 00m
+**Remaining this week:** 16h 20m
+
+### 2026-05-27 (Wednesday)
+
+- Off day
+- Reason: eid
+
+**Today:** 0h 00m
+**Weekly progress:** 8h 40m / 25h 00m
+**Remaining this week:** 16h 20m
+
 
 ## 📅 Daily Summary
 --------------
@@ -53,6 +71,8 @@
 - **2026-05-23** -> 2h 15m
 - **2026-05-24** -> 2h 15m
 - **2026-05-25** -> 1h 30m
+- **2026-05-26** -> 0h 25m
+- **2026-05-27** -> Off day (eid)
 
 
 ## 📅 Weekly Progress
