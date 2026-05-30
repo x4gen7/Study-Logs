@@ -4,85 +4,22 @@
 **Weekly target:** 25h 00m
 **4-week target:** 100h 00m
 
-### 2026-05-22 (Friday)
+### 2026-05-29 (Friday)
 
-- General InfoSec: 1h 35m
-- HackTheBox: 0h 19m
-- TryHackMe: 0h 21m
+- CTF: 0h 40m
+- General InfoSec: 0h 27m
+- HackTheBox: 0h 16m
+- TryHackMe: 0h 52m
 
 **Today:** 2h 15m
 **Weekly progress:** 2h 15m / 25h 00m
 **Remaining this week:** 22h 45m
 
-### 2026-05-23 (Saturday)
-
-- CTF: 0h 40m
-- General InfoSec: 0h 48m
-- TCM-Security: 0h 25m
-- TryHackMe: 0h 22m
-
-**Today:** 2h 15m
-**Weekly progress:** 4h 30m / 25h 00m
-**Remaining this week:** 20h 30m
-
-### 2026-05-24 (Sunday)
-
-- General InfoSec: 0h 31m
-- HackTheBox: 0h 27m
-- TCM-Security: 0h 22m
-- TryHackMe: 0h 55m
-
-**Today:** 2h 15m
-**Weekly progress:** 6h 45m / 25h 00m
-**Remaining this week:** 18h 15m
-
-### 2026-05-25 (Monday)
-
-- General InfoSec: 1h 07m
-- HackTheBox: 0h 23m
-
-**Today:** 1h 30m
-**Weekly progress:** 8h 15m / 25h 00m
-**Remaining this week:** 16h 45m
-
-### 2026-05-26 (Tuesday)
-
-- CTF: 0h 07m
-- General InfoSec: 0h 18m
-
-**Today:** 0h 25m
-**Weekly progress:** 8h 40m / 25h 00m
-**Remaining this week:** 16h 20m
-
-### 2026-05-27 (Wednesday)
-
-- Off day
-- Reason: eid
-
-**Today:** 0h 00m
-**Weekly progress:** 8h 40m / 25h 00m
-**Remaining this week:** 16h 20m
-
-### 2026-05-28 (Thursday)
-
-- General InfoSec: 0h 14m
-- TryHackMe: 0h 36m
-
-**Today:** 0h 50m
-**Weekly progress:** 9h 30m / 25h 00m
-**Remaining this week:** 15h 30m
-
 
 ## 📅 Daily Summary
 --------------
 
-- **2026-05-22** -> 2h 15m
-- **2026-05-23** -> 2h 15m
-- **2026-05-24** -> 2h 15m
-- **2026-05-25** -> 1h 30m
-- **2026-05-26** -> 0h 25m
-- **2026-05-27** -> Off day (eid)
-- **2026-05-28** -> 0h 50m
+- **2026-05-29** -> 2h 15m
 
 
 ## 📅 Weekly Progress
