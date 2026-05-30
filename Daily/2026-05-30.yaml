@@ -1,0 +1,33 @@
+date: '2026-05-30'
+entries:
+- category: General InfoSec
+  duration_minutes: 9
+  duration_hours: 0h 09m
+- category: TryHackMe
+  duration_minutes: 36
+  duration_hours: 0h 36m
+- category: CTF
+  duration_minutes: 36
+  duration_hours: 0h 36m
+- category: TryHackMe
+  duration_minutes: 8
+  duration_hours: 0h 08m
+- category: General InfoSec
+  duration_minutes: 1
+  duration_hours: 0h 01m
+- category: TryHackMe
+  duration_minutes: 15
+  duration_hours: 0h 15m
+- category: General InfoSec
+  duration_minutes: 15
+  duration_hours: 0h 15m
+- category: CTF
+  duration_minutes: 2
+  duration_hours: 0h 02m
+- category: HackTheBox
+  duration_minutes: 13
+  duration_hours: 0h 13m
+day_total_minutes: 135
+day_total_hours: 2h 15m
+created_at: '2026-05-30T18:56:35+03:00'
+status: study_day
