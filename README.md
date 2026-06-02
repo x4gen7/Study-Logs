@@ -37,6 +37,18 @@
 **Weekly progress:** 9h 00m / 25h 00m
 **Remaining this week:** 16h 00m
 
+### 2026-06-01 (Monday)
+
+- Book The Hacker Playbook 3: 0h 13m
+- CTF: 1h 04m
+- General CS: 0h 39m
+- General InfoSec: 1h 40m
+- HackTheBox: 0h 54m
+
+**Today:** 4h 30m
+**Weekly progress:** 13h 30m / 25h 00m
+**Remaining this week:** 11h 30m
+
 
 ## 📅 Daily Summary
 --------------
@@ -44,6 +56,7 @@
 - **2026-05-29** -> 2h 15m
 - **2026-05-30** -> 2h 15m
 - **2026-05-31** -> 4h 30m
+- **2026-06-01** -> 4h 30m
 
 
 ## 📅 Weekly Progress
