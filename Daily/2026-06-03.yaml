@@ -1,0 +1,21 @@
+date: '2026-06-03'
+entries:
+- category: HackTheBox
+  duration_minutes: 63
+  duration_hours: 1h 03m
+- category: TryHackMe
+  duration_minutes: 75
+  duration_hours: 1h 15m
+- category: General InfoSec
+  duration_minutes: 60
+  duration_hours: 1h 00m
+- category: General InfoSec
+  duration_minutes: 60
+  duration_hours: 1h 00m
+- category: General InfoSec
+  duration_minutes: 12
+  duration_hours: 0h 12m
+day_total_minutes: 270
+day_total_hours: 4h 30m
+created_at: '2026-06-04T13:20:35+03:00'
+status: study_day

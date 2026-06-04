@@ -60,6 +60,16 @@
 **Weekly progress:** 15h 45m / 25h 00m
 **Remaining this week:** 9h 15m
 
+### 2026-06-03 (Wednesday)
+
+- General InfoSec: 2h 12m
+- HackTheBox: 1h 03m
+- TryHackMe: 1h 15m
+
+**Today:** 4h 30m
+**Weekly progress:** 20h 15m / 25h 00m
+**Remaining this week:** 4h 45m
+
 
 ## 📅 Daily Summary
 --------------
@@ -69,6 +79,7 @@
 - **2026-05-31** -> 4h 30m
 - **2026-06-01** -> 4h 30m
 - **2026-06-02** -> 2h 15m
+- **2026-06-03** -> 4h 30m
 
 
 ## 📅 Weekly Progress
