@@ -70,6 +70,17 @@
 **Weekly progress:** 20h 15m / 25h 00m
 **Remaining this week:** 4h 45m
 
+### 2026-06-04 (Thursday)
+
+- CTF: 0h 35m
+- General InfoSec: 1h 22m
+- HackTheBox: 0h 35m
+- TryHackMe: 1h 13m
+
+**Today:** 3h 45m
+**Weekly progress:** 24h 00m / 25h 00m
+**Remaining this week:** 1h 00m
+
 
 ## 📅 Daily Summary
 --------------
@@ -80,38 +91,42 @@
 - **2026-06-01** -> 4h 30m
 - **2026-06-02** -> 2h 15m
 - **2026-06-03** -> 4h 30m
+- **2026-06-04** -> 3h 45m
 
 
 ## 📅 Weekly Progress
 ---------------
 
 - **2026-05-22 -> 2026-05-28 (Week-1)** -> 9h 30m | Off days: 1
+- **2026-05-29 -> 2026-06-04 (Week-2)** -> 24h 00m
 
 ## 📅 Weekly Study Summary
-**Weeks:** 2026-05-22 -> 2026-05-28 (Friday -> Thursday)
+**Weeks:** 2026-05-22 -> 2026-06-04 (Friday -> Thursday)
 
 ---
 
 ### ⏱ Total Study Time
-- **This span:** **9h 30m** (570 minutes)
+- **This span:** **33h 30m** (2010 minutes)
 - **Off days:** 1
 
 ---
 
 ### 🧠 Category Breakdown
-- **General InfoSec:** 4h 33m
-- **TryHackMe:** 2h 14m
-- **HackTheBox:** 1h 09m
-- **CTF:** 0h 47m
+- **General InfoSec:** 12h 57m
+- **TryHackMe:** 9h 08m
+- **HackTheBox:** 5h 22m
+- **CTF:** 4h 19m
 - **TCM-Security:** 0h 47m
+- **General CS:** 0h 44m
+- **Book The Hacker Playbook 3:** 0h 13m
 
 ---
 
 ### 🎯 4-Week Target Progress
 - **4-week target:** 100h 00m
-- **Studied so far (1 / 4 weeks):** **9h 30m**
-- **Off days in 1-week span:** 1
-- **Remaining to hit 4-week target:** **90h 30m**
+- **Studied so far (2 / 4 weeks):** **33h 30m**
+- **Off days in 2-week span:** 1
+- **Remaining to hit 4-week target:** **66h 30m**
 
 
 ## 📅 Monthly Progress
