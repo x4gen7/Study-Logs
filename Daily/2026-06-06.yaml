@@ -1,0 +1,18 @@
+date: '2026-06-06'
+entries:
+- category: HackTheBox
+  duration_minutes: 24
+  duration_hours: 0h 24m
+- category: General InfoSec
+  duration_minutes: 32
+  duration_hours: 0h 32m
+- category: CTF
+  duration_minutes: 60
+  duration_hours: 1h 00m
+- category: CTF
+  duration_minutes: 19
+  duration_hours: 0h 19m
+day_total_minutes: 135
+day_total_hours: 2h 15m
+created_at: '2026-06-07T05:53:10+03:00'
+status: study_day
