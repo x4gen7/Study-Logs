@@ -1,0 +1,30 @@
+date: '2026-06-07'
+entries:
+- category: TryHackMe
+  duration_minutes: 60
+  duration_hours: 1h 00m
+- category: TryHackMe
+  duration_minutes: 21
+  duration_hours: 0h 21m
+- category: CTF
+  duration_minutes: 60
+  duration_hours: 1h 00m
+- category: CTF
+  duration_minutes: 14
+  duration_hours: 0h 14m
+- category: General InfoSec
+  duration_minutes: 59
+  duration_hours: 0h 59m
+- category: HackTheBox
+  duration_minutes: 21
+  duration_hours: 0h 21m
+- category: Pico
+  duration_minutes: 20
+  duration_hours: 0h 20m
+- category: TCM-Security
+  duration_minutes: 15
+  duration_hours: 0h 15m
+day_total_minutes: 270
+day_total_hours: 4h 30m
+created_at: '2026-06-08T01:57:50+03:00'
+status: study_day
