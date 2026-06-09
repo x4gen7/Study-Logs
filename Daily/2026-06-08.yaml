@@ -1,0 +1,27 @@
+date: '2026-06-08'
+entries:
+- category: TCM-Security
+  duration_minutes: 15
+  duration_hours: 0h 15m
+- category: CTF
+  duration_minutes: 18
+  duration_hours: 0h 18m
+- category: General CS
+  duration_minutes: 49
+  duration_hours: 0h 49m
+- category: General InfoSec
+  duration_minutes: 58
+  duration_hours: 0h 58m
+- category: TryHackMe
+  duration_minutes: 60
+  duration_hours: 1h 00m
+- category: TryHackMe
+  duration_minutes: 60
+  duration_hours: 1h 00m
+- category: TryHackMe
+  duration_minutes: 10
+  duration_hours: 0h 10m
+day_total_minutes: 270
+day_total_hours: 4h 30m
+created_at: '2026-06-09T03:07:33+03:00'
+status: study_day

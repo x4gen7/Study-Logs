@@ -36,6 +36,18 @@
 **Weekly progress:** 9h 00m / 25h 00m
 **Remaining this week:** 16h 00m
 
+### 2026-06-08 (Monday)
+
+- CTF: 0h 18m
+- General CS: 0h 49m
+- General InfoSec: 0h 58m
+- TCM-Security: 0h 15m
+- TryHackMe: 2h 10m
+
+**Today:** 4h 30m
+**Weekly progress:** 13h 30m / 25h 00m
+**Remaining this week:** 11h 30m
+
 
 ## 📅 Daily Summary
 --------------
@@ -43,6 +55,7 @@
 - **2026-06-05** -> 2h 15m
 - **2026-06-06** -> 2h 15m
 - **2026-06-07** -> 4h 30m
+- **2026-06-08** -> 4h 30m
 
 
 ## 📅 Weekly Progress
