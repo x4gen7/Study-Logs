@@ -1,0 +1,319 @@
+{
+  "generated_at": "2026-06-10T01:42:29+03:00",
+  "weekly_target_minutes": 1500,
+  "four_week_target_minutes": 6000,
+  "today": null,
+  "current_week": {
+    "start": "2026-06-05",
+    "end": "2026-06-11",
+    "total": 810,
+    "total_display": "13h 30m",
+    "remaining": 690,
+    "categories": {
+      "TryHackMe": 253,
+      "General InfoSec": 242,
+      "CTF": 171,
+      "General CS": 49,
+      "HackTheBox": 45,
+      "TCM-Security": 30,
+      "Pico": 20
+    },
+    "days": [
+      {
+        "date": "2026-06-05",
+        "total": 135,
+        "categories": {
+          "TryHackMe": 42,
+          "General InfoSec": 93
+        },
+        "status": "study_day",
+        "off_day_reason": null
+      },
+      {
+        "date": "2026-06-06",
+        "total": 135,
+        "categories": {
+          "HackTheBox": 24,
+          "General InfoSec": 32,
+          "CTF": 79
+        },
+        "status": "study_day",
+        "off_day_reason": null
+      },
+      {
+        "date": "2026-06-07",
+        "total": 270,
+        "categories": {
+          "TryHackMe": 81,
+          "CTF": 74,
+          "General InfoSec": 59,
+          "HackTheBox": 21,
+          "Pico": 20,
+          "TCM-Security": 15
+        },
+        "status": "study_day",
+        "off_day_reason": null
+      },
+      {
+        "date": "2026-06-08",
+        "total": 270,
+        "categories": {
+          "TCM-Security": 15,
+          "CTF": 18,
+          "General CS": 49,
+          "General InfoSec": 58,
+          "TryHackMe": 130
+        },
+        "status": "study_day",
+        "off_day_reason": null
+      }
+    ]
+  },
+  "daily_recent": [
+    {
+      "date": "2026-06-05",
+      "total": 135,
+      "categories": {
+        "TryHackMe": 42,
+        "General InfoSec": 93
+      },
+      "status": "study_day",
+      "off_day_reason": null
+    },
+    {
+      "date": "2026-06-06",
+      "total": 135,
+      "categories": {
+        "HackTheBox": 24,
+        "General InfoSec": 32,
+        "CTF": 79
+      },
+      "status": "study_day",
+      "off_day_reason": null
+    },
+    {
+      "date": "2026-06-07",
+      "total": 270,
+      "categories": {
+        "TryHackMe": 81,
+        "CTF": 74,
+        "General InfoSec": 59,
+        "HackTheBox": 21,
+        "Pico": 20,
+        "TCM-Security": 15
+      },
+      "status": "study_day",
+      "off_day_reason": null
+    },
+    {
+      "date": "2026-06-08",
+      "total": 270,
+      "categories": {
+        "TCM-Security": 15,
+        "CTF": 18,
+        "General CS": 49,
+        "General InfoSec": 58,
+        "TryHackMe": 130
+      },
+      "status": "study_day",
+      "off_day_reason": null
+    }
+  ],
+  "weekly": [
+    {
+      "start": "2026-05-22",
+      "end": "2026-05-28",
+      "total": 570,
+      "off_days": 1,
+      "categories": {
+        "General InfoSec": 273,
+        "TryHackMe": 134,
+        "HackTheBox": 69,
+        "CTF": 47,
+        "TCM-Security": 47
+      }
+    },
+    {
+      "start": "2026-05-29",
+      "end": "2026-06-04",
+      "total": 1440,
+      "off_days": 0,
+      "categories": {
+        "General InfoSec": 504,
+        "TryHackMe": 414,
+        "HackTheBox": 253,
+        "CTF": 212,
+        "General CS": 44,
+        "Book The Hacker Playbook 3": 13
+      }
+    }
+  ],
+  "monthly": [
+    {
+      "label": "2025-10",
+      "start": "2025-10-01",
+      "end": "2025-11-30",
+      "total": 4522,
+      "off_days": 0,
+      "goal_percent": 75.4,
+      "categories": {
+        "TryHackMe": 1411,
+        "HackTheBox": 1008,
+        "Book": 96,
+        "Labex": 91,
+        "PortSwigger": 45,
+        "Programming Language": 19,
+        "INE-eJPT": 1472,
+        "CTF": 380
+      }
+    },
+    {
+      "label": "2025-11",
+      "start": "2025-11-01",
+      "end": "2025-11-30",
+      "total": 6949,
+      "off_days": 0,
+      "goal_percent": 115.8,
+      "categories": {
+        "INE-eJPT": 3011,
+        "TryHackMe": 1934,
+        "HackTheBox": 1390,
+        "CTF": 278,
+        "TCM-Security": 221,
+        "Book (Penetration Testing - A Hands-On Introduction to Hacking)": 45,
+        "General CS": 70
+      }
+    },
+    {
+      "label": "2025-12",
+      "start": "2025-12-01",
+      "end": "2025-12-31",
+      "total": 4641,
+      "off_days": 0,
+      "goal_percent": 77.3,
+      "categories": {
+        "TryHackMe": 1999,
+        "HackTheBox": 1357,
+        "CTF": 657,
+        "TCM-Security": 390,
+        "INE-eJPT": 118,
+        "Book": 144
+      }
+    },
+    {
+      "label": "2026-01",
+      "start": "2026-01-02",
+      "end": "2026-01-29",
+      "total": 5181,
+      "off_days": 0,
+      "goal_percent": 86.3,
+      "categories": {
+        "TryHackMe": 2188,
+        "HackTheBox": 1381,
+        "CTF": 917,
+        "TCM-Security": 165,
+        "Programming Language": 325,
+        "General CS": 205
+      }
+    },
+    {
+      "label": "2026-02",
+      "start": "2026-01-30",
+      "end": "2026-02-26",
+      "total": 3844,
+      "off_days": 0,
+      "goal_percent": 64.1,
+      "categories": {
+        "TryHackMe": 1375,
+        "HackTheBox": 453,
+        "CTF": 1050,
+        "TCM-Security": 513,
+        "General CS": 297,
+        "General InfoSec": 71,
+        "Book": 25
+      }
+    },
+    {
+      "label": "2026-03",
+      "start": "2026-02-27",
+      "end": "2026-03-26",
+      "total": 2840,
+      "off_days": 9,
+      "goal_percent": 47.3,
+      "categories": {
+        "CTF": 659,
+        "TryHackMe": 652,
+        "HackTheBox": 626,
+        "General InfoSec": 516,
+        "TCM-Security": 188,
+        "General CS": 149,
+        "Book The Hacker Playbook 3": 35,
+        "book The Web Application Hackers Handbook": 15
+      }
+    },
+    {
+      "label": "2026-04",
+      "start": "2026-03-27",
+      "end": "2026-04-23",
+      "total": 5695,
+      "off_days": 1,
+      "goal_percent": 94.9,
+      "categories": {
+        "Hackviser": 1937,
+        "CTF": 1080,
+        "General InfoSec": 967,
+        "HackTheBox": 713,
+        "TryHackMe": 518,
+        "TCM-Security": 180,
+        "Book Penetration Testing - A Hands-On Introduction to Hacking": 146,
+        "General CS": 84,
+        "Book Hacking - The Art of Exploitation,": 50,
+        "Book The Hacker Playbook 3": 20
+      }
+    },
+    {
+      "label": "2026-05",
+      "start": "2026-04-24",
+      "end": "2026-05-21",
+      "total": 4410,
+      "off_days": 3,
+      "goal_percent": 73.5,
+      "categories": {
+        "CTF": 1280,
+        "General InfoSec": 1129,
+        "HackTheBox": 1008,
+        "TryHackMe": 447,
+        "book The Web Application Hackers Handbook": 233,
+        "Hackviser": 224,
+        "Book the linux Command line": 45,
+        "TCM-Security": 44
+      }
+    }
+  ],
+  "overall": {
+    "minutes": 40902,
+    "display": "681h 42m",
+    "off_days": 14,
+    "categories": {
+      "TryHackMe": 11325,
+      "HackTheBox": 8303,
+      "CTF": 6731,
+      "INE-eJPT": 4601,
+      "General InfoSec": 3702,
+      "Hackviser": 2161,
+      "TCM-Security": 1778,
+      "General CS": 898,
+      "Programming Language": 344,
+      "Book": 265,
+      "book The Web Application Hackers Handbook": 248,
+      "Book Penetration Testing - A Hands-On Introduction to Hacking": 146,
+      "Labex": 91,
+      "Book The Hacker Playbook 3": 68,
+      "Book Hacking - The Art of Exploitation,": 50,
+      "PortSwigger": 45,
+      "Book (Penetration Testing - A Hands-On Introduction to Hacking)": 45,
+      "Book the linux Command line": 45,
+      "Pico": 20
+    }
+  }
+}

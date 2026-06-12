@@ -520,7 +520,7 @@ def add_review_entries(
                 stdscr,
                 3,
                 4,
-                "Select a category. Enter to continue, q to go back.",
+                "Select a category. 1-9 quick-pick, Enter to continue, q to go back.",
                 curses.color_pair(3) | curses.A_BOLD,
             )
         elif mode == "custom":
@@ -566,6 +566,13 @@ def add_review_entries(
                 idx = (idx - 1) % len(options)
             elif key in (curses.KEY_DOWN, ord("j")):
                 idx = (idx + 1) % len(options)
+            elif ord("1") <= key <= ord("9"):
+                target = key - ord("1")
+                if target < len(categories):
+                    idx = target
+                    selected_category = categories[target]
+                    mode = "minutes"
+                    input_value = ""
             elif key in (10, 13, curses.KEY_ENTER):
                 selected = options[idx]
                 if selected == "Back":

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Study Logs</title>
+<style>
+  :root {
+    --bg: #0f1419; --card: #1a2129; --border: #2b3540;
+    --text: #d8e1e8; --dim: #7d8b99; --accent: #36c5f0;
+    --green: #3ddc84; --yellow: #f5c542; --red: #ef6461;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body {
+    background: var(--bg); color: var(--text);
+    font: 15px/1.5 -apple-system, "Segoe UI", Roboto, sans-serif;
+    padding: 24px; max-width: 1100px; margin: 0 auto;
+  }
+  h1 { font-size: 22px; margin-bottom: 4px; }
+  .sub { color: var(--dim); font-size: 13px; margin-bottom: 24px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+  .card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 10px; padding: 18px;
+  }
+  .card h2 {
+    font-size: 13px; text-transform: uppercase; letter-spacing: 1px;
+    color: var(--dim); margin-bottom: 12px;
+  }
+  .big { font-size: 32px; font-weight: 700; }
+  .big small { font-size: 14px; color: var(--dim); font-weight: 400; }
+  .wide { grid-column: 1 / -1; }
+  .progress { background: var(--bg); border-radius: 6px; height: 14px; overflow: hidden; margin: 10px 0 6px; }
+  .progress > div { height: 100%; background: var(--accent); border-radius: 6px; transition: width .4s; }
+  .progress.ok > div { background: var(--green); }
+  .row { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; padding: 3px 0; }
+  .row .label { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .row .val { color: var(--dim); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .bar-wrap { flex: 1; margin: 0 10px; }
+  .bar { background: var(--bg); border-radius: 4px; height: 8px; }
+  .bar > div { height: 100%; border-radius: 4px; background: var(--accent); }
+  .muted { color: var(--dim); font-size: 13px; }
+  .heat { display: grid; grid-template-columns: 80px repeat(7, 1fr); gap: 4px; margin-top: 8px; align-items: center; }
+  .heat .dow { text-align: center; font-size: 11px; color: var(--dim); }
+  .heat .wk { font-size: 11px; color: var(--dim); white-space: nowrap; }
+  .heat .cell {
+    aspect-ratio: 2.4; border-radius: 3px; background: var(--bg);
+    position: relative; cursor: default;
+  }
+  .heat .future { opacity: .35; border: 1px dashed var(--border); }
+  .heat .cell:hover::after {
+    content: attr(data-tip); position: absolute; bottom: 120%; left: 50%;
+    transform: translateX(-50%); background: #000; color: #fff;
+    padding: 3px 8px; border-radius: 4px; font-size: 11px; white-space: nowrap; z-index: 2;
+  }
+  .off { outline: 1px solid var(--red); }
+  footer { margin-top: 24px; color: var(--dim); font-size: 12px; }
+</style>
+</head>
+<body>
+<h1>Study Logs Dashboard</h1>
+<div class="sub" id="generated">loading…</div>
+<div class="grid" id="app"></div>
+<footer>Rebuild with <code>python3 build_dashboard.py</code> after logging.</footer>
+
+<script>
+const hm = m => `${Math.floor(m / 60)}h ${String(m % 60).padStart(2, "0")}m`;
+const pct = (a, b) => b ? Math.min(100, Math.round(a / b * 100)) : 0;
+
+function bars(categories, max) {
+  const top = max ?? Math.max(...Object.values(categories), 1);
+  return Object.entries(categories).map(([cat, mins]) => `
+    <div class="row">
+      <span class="label">${cat}</span>
+      <span class="bar-wrap"><span class="bar"><div style="width:${pct(mins, top)}%"></div></span></span>
+      <span class="val">${hm(mins)}</span>
+    </div>`).join("");
+}
+
+// Color anchors: reddish below 2h15m, green at 2h15m, dark green at 4h30m+.
+const RED = [0xef, 0x64, 0x61], GREEN = [0x3d, 0xdc, 0x84], DARK = [0x14, 0x53, 0x2d];
+const LOW = 135, HIGH = 270;
+
+function lerp(a, b, t) {
+  return "#" + a.map((v, i) => Math.round(v + (b[i] - v) * t).toString(16).padStart(2, "0")).join("");
+}
+
+function heatColor(mins) {
+  if (!mins) return "var(--bg)";
+  if (mins >= HIGH) return lerp(DARK, DARK, 0);
+  if (mins >= LOW) return lerp(GREEN, DARK, (mins - LOW) / (HIGH - LOW));
+  return lerp(RED, GREEN, mins / LOW);
+}
+
+function addDays(iso, n) {
+  const [y, m, d] = iso.split("-").map(Number);
+  const dt = new Date(y, m - 1, d + n);
+  return `${dt.getFullYear()}-${String(dt.getMonth() + 1).padStart(2, "0")}-${String(dt.getDate()).padStart(2, "0")}`;
+}
+
+function weekStartIso(iso) {
+  const [y, m, d] = iso.split("-").map(Number);
+  const offset = (new Date(y, m - 1, d).getDay() - 5 + 7) % 7; // Friday start
+  return addDays(iso, -offset);
+}
+
+function heatWeeks(daily) {
+  const byDate = Object.fromEntries(daily.map(day => [day.date, day]));
+  const starts = [...new Set(daily.map(day => weekStartIso(day.date)))].sort();
+  const dows = ["Fri", "Sat", "Sun", "Mon", "Tue", "Wed", "Thu"];
+  let html = `<div></div>` + dows.map(n => `<div class="dow">${n}</div>`).join("");
+  for (const start of starts) {
+    html += `<div class="wk">${start.slice(5)} →</div>`;
+    for (let i = 0; i < 7; i++) {
+      const dateIso = addDays(start, i);
+      const day = byDate[dateIso];
+      if (!day) {
+        html += `<div class="blank"></div>`;
+        continue;
+      }
+      const off = day.status === "off_day";
+      const tip = `${dateIso}: ${hm(day.total)}${off ? " (off)" : ""}`;
+      html += `<div class="cell ${off ? "off" : ""}" style="background:${heatColor(day.total)}" data-tip="${tip}"></div>`;
+    }
+  }
+  return html;
+}
+
+async function render() {
+  const d = await (await fetch("data.json")).json();
+  document.getElementById("generated").textContent =
+    `data generated ${new Date(d.generated_at).toLocaleString()}`;
+
+  const wk = d.current_week;
+  const wkPct = pct(wk.total, d.weekly_target_minutes);
+  const todayMins = d.today ? d.today.total : 0;
+
+  const heat = heatWeeks(d.daily_recent);
+
+  document.getElementById("app").innerHTML = `
+    <div class="card">
+      <h2>Today</h2>
+      <div class="big">${hm(todayMins)}</div>
+      <div class="muted">${d.today ? Object.keys(d.today.categories).length + " categories logged" : "no log yet"}</div>
+    </div>
+
+    <div class="card">
+      <h2>This Week (${wk.start} → ${wk.end})</h2>
+      <div class="big">${wk.total_display} <small>/ ${hm(d.weekly_target_minutes)}</small></div>
+      <div class="progress ${wkPct >= 100 ? "ok" : ""}"><div style="width:${wkPct}%"></div></div>
+      <div class="muted">${wkPct}% — remaining ${hm(wk.remaining)}</div>
+    </div>
+
+    <div class="card">
+      <h2>All Time</h2>
+      <div class="big">${d.overall.display}</div>
+      <div class="muted">${d.overall.minutes.toLocaleString()} minutes · ${d.overall.off_days} off days</div>
+    </div>
+
+    <div class="card wide">
+      <h2>Daily Logs (Fri → Thu)</h2>
+      <div class="heat">${heat}</div>
+      <div class="muted" style="margin-top:8px">
+        <span style="color:${heatColor(60)}">■</span> &lt; 2h15m ·
+        <span style="color:${heatColor(135)}">■</span> 2h15m ·
+        <span style="color:${heatColor(200)}">■</span> 2h15m–4h30m ·
+        <span style="color:${heatColor(270)}">■</span> ≥ 4h30m
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>This Week by Category</h2>
+      ${Object.keys(wk.categories).length ? bars(wk.categories) : '<div class="muted">nothing logged this week</div>'}
+    </div>
+
+    <div class="card">
+      <h2>All-Time Categories</h2>
+      ${bars(d.overall.categories)}
+    </div>
+
+    <div class="card">
+      <h2>Weekly History</h2>
+      ${d.weekly.slice(-8).reverse().map(w => `
+        <div class="row">
+          <span class="label">${w.start} → ${w.end}</span>
+          <span class="val">${hm(w.total)} · off ${w.off_days}</span>
+        </div>`).join("") || '<div class="muted">no weekly files yet</div>'}
+    </div>
+
+    <div class="card">
+      <h2>Monthly History</h2>
+      ${bars(Object.fromEntries(d.monthly.map(m => [m.label, m.total])))}
+    </div>`;
+}
+render().catch(err => {
+  document.getElementById("app").innerHTML =
+    `<div class="card wide">Failed to load data.json — run <code>python3 build_dashboard.py</code> first.<br><span class="muted">${err}</span></div>`;
+});
+</script>
+</body>
+</html>
