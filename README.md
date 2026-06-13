@@ -15,11 +15,23 @@
 **Weekly progress:** 2h 15m / 25h 00m
 **Remaining this week:** 22h 45m
 
+### 2026-06-13 (Saturday)
+
+- CTF: 0h 30m
+- General InfoSec: 0h 46m
+- HackTheBox: 0h 08m
+- TryHackMe: 0h 51m
+
+**Today:** 2h 15m
+**Weekly progress:** 4h 30m / 25h 00m
+**Remaining this week:** 20h 30m
+
 
 ## 📅 Daily Summary
 --------------
 
 - **2026-06-12** -> 2h 15m
+- **2026-06-13** -> 2h 15m
 
 
 ## 📅 Weekly Progress
